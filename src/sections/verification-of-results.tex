@@ -1,18 +1,18 @@
 To fulfill our study we provide an opportunity to verify its results by means of Wolfram Mathematica language.
 
 \subsection{Mathematica commands} \label{subsec:mathematica-commands}
-Proceeding to the repository~\cite{mmca_package} the following commands to verify the formulas:
+Proceeding to the repository~\cite{PK22Source} the following commands to verify the formulas:
 \begin{itemize}
-    \item \texttt{A[m,r]} gives $\coeffA{m}{r}$, definition~\eqref{eq:def_coeff_a}.
-    \item \texttt{L[m,n,k]} gives $\polynomialL{m}{n}{k}$, definition~\eqref{eq:def_polynomial_l}.
-    \item \texttt{P[m,x,b]} gives $\polynomialP{m}{x}{b}$, definition~\eqref{eq:def_polynomial_p}.
-    \item \texttt{P[m,x+y,x+y]} verifies Lemma~\ref{lemma_polynomial_p_and_odd_power}.
-    \item \texttt{H[m,t,j]} gives $\coeffH{m}{t}{j}$.
-    \item \texttt{X[m,t,k]} gives $\polynomialX{m}{t}{k}$.
-    \item \texttt{ConvPowerIdentityStrict[m, x+y]} verifies the Corollary~\ref{cor_bin_exp_and_macaulay_conv_strict}.
-    \item \texttt{ConvPowerIdentity[m, x+y]} verifies the Corollary~\ref{cor_bin_exp_and_macaulay_conv}.
-    \item \texttt{ConvPowerIdentityParametric[m, x, a]}, $m,x,a$ are constants - verifies equation~\eqref{eq:parametric-identity}.
-    \item \texttt{ConvPowerIdentityStrictParametric[m, x, a]}, $m,x,a$ are constants - verifies equation~\eqref{eq:parametric-identity-strict}.
+    \item \texttt{A[m, r]} returns the real coefficient $\coeffA{m}{r}$ defined by~\eqref{eq:def_coeff_a}.
+    \item \texttt{PolynomialL[m, n, k]} returns the polynomial $\polynomialL{m}{n}{k}$ defined by~\eqref{eq:def_polynomial_l}.
+    \item \texttt{PolynomialP[m, x, b]} returns the polynomial $\polynomialP{m}{x}{b}$ defined by~\eqref{eq:def_polynomial_p}.
+    \item \texttt{Expand[PolynomialP[m, x + y, x + y]]} verifies the Lemma~\ref{lemma_polynomial_p_and_odd_power}.
+    \item \texttt{PolynomialH[m, t, j]} returns the polynomial $\coeffH{m}{t}{j}$ defined by~\eqref{eq:def_coeff_h}.
+    \item \texttt{PolynomialX[m, t, k]} returns the polynomial $\polynomialX{m}{t}{k}$ defined by~\eqref{eq:def_coeff_x}.
+    \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionTest[m, x + y]]} verifies the Corollary~\ref{cor_bin_exp_and_macaulay_conv}.
+    \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionStrictTest[m, x + y]]} verifies the Corollary~\ref{cor_bin_exp_and_macaulay_conv_strict}.
+    \item \texttt{ConvPowerIdentityParametric[m, x, a]} verifies equation~\eqref{eq:parametric-identity}.
+    \item \texttt{ConvPowerIdentityStrictParametric[m, x, a]} verifies equation~\eqref{eq:parametric-identity-strict}.
 \end{itemize}
 
 \subsection{Examples} \label{subsec:examples}

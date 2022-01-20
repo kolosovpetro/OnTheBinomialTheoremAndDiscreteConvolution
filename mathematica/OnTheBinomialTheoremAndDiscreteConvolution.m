@@ -113,13 +113,13 @@ MatrixPolynomialL[m_, M_, N_] := Column[Table[L[m, n, k], {n, -N, N}, {k, -M, M}
 
 (* Expressions and corollaries tests. *)
 
-BinomialTheoremAndDiscreteConvolutionTest[m_, x_] := Refine[Sum[A[m,r] * DiscreteConvolutionOfMacaulayPowerFunction[x, r, 0], {r, 0, m}], Element[x, Integers], Assumptions -> x > 0];
+BinomialTheoremAndDiscreteConvolutionTest[m_, x_] := Refine[Sum[A[m, r] * DiscreteConvolutionOfMacaulayPowerFunction[x, r, 0], {r, 0, m}], Element[x, Integers], Assumptions -> x > 0];
 
-BinomialTheoremAndDiscreteConvolutionStrictTest[m_, x_] := Refine[Sum[A[m,r] * DiscreteConvolutionOfMacaulayPowerFunctionStrict[x, r, 0], {r, 0, m}], Element[x, Integers], Assumptions -> x > 0];
+BinomialTheoremAndDiscreteConvolutionStrictTest[m_, x_] := Refine[Sum[A[m, r] * DiscreteConvolutionOfMacaulayPowerFunctionStrict[x, r, 0], {r, 0, m}], Element[x, Integers], Assumptions -> x > 0];
 
-DiscreteConvolutionPowerIdentityParametricTest[m_, x_, a_] := Expand[Refine[Sum[A[m,r] * DiscreteConvolutionOfMacaulayPowerFunction[x, r, a], {r, 0, m}], Element[x, Integers], Assumptions -> x > 2a]];
+DiscreteConvolutionPowerIdentityParametricTest[m_, x_, a_] := Expand[Refine[Sum[A[m, r] * DiscreteConvolutionOfMacaulayPowerFunction[x, r, a], {r, 0, m}], Element[x, Integers], Assumptions -> x > 2a]];
 
-DiscreteConvolutionPowerIdentityStrictParametricTest[m_, x_, a_] := Expand[Refine[Sum[A[m,r] * DiscreteConvolutionOfMacaulayPowerFunctionStrict[x, r, a], {r, 0, m}], Element[x, Integers], Assumptions -> x > 2a]];
+DiscreteConvolutionPowerIdentityStrictParametricTest[m_, x_, a_] := Expand[Refine[Sum[A[m, r] * DiscreteConvolutionOfMacaulayPowerFunctionStrict[x, r, a], {r, 0, m}], Element[x, Integers], Assumptions -> x > 2a]];
 
 End[ ]
 
