@@ -54,6 +54,10 @@ DiscreteConvolutionPowerIdentityStrictParametricTest::usage= "Verifies an equati
 
 IversonBracket::usage= "Returns true if s is even, otherwise false."
 
+PolynomialIdentityInvolvingX::usage= "Defines the right part of an equation (3.1). See "
+
+PolynomialIdentityInvolvingH::usage= "Defines the top right part of an equation (3.1). See"
+
 Begin["`Private`"]
 
 (* Definitions and conventions *)
@@ -75,6 +79,10 @@ PolynomialH[m_, t_, b_] := Sum[Binomial[j, t] * A[m, j] * (-1)^j / (2j - t + 1) 
 
 PolynomialX[m_, t_, j_] := Sum[(-1)^m * PolynomialH[m, t, k] * j^k, {k, 1, 2m - t + 1}];
 
+PolynomialIdentityInvolvingX[m_, n_, b_] := Sum[(-1)^(m - r) * PolynomialX[m, r, b] * n ^ r, {r, 0, m}];
+
+PolynomialIdentityInvolvingH[m_, n_, b_] := Sum[Sum[(-1) ^ (2m - r) * PolynomialH[m, r, l] * b^l * n^r, {l, 1, 2m - r + 1}], {r, 0, m}];
+
 OrdinaryPowerSumS[p_, n_]:= Sum[k^p, {k, 0, n-1}];
 
 DiscreteConvolutionLikeSumOfPowers[n_, r_, b_] := Sum[k^r (n - k)^r, {k, 0, b - 1}];
@@ -85,7 +93,7 @@ MacaulayPowerFunction[x_, n_, a_] := Piecewise[{{(x - a) ^ n, x >= a}, {0, True}
 
 MacaulayPowerFunctionStrict[x_, n_, a_] := Piecewise[{{(x - a)^n, x > a}, {0, True}}];
 
-Iverson[s_] := Boole[Mod[s, 2] == 0];
+IversonBracket[s_] := Boole[Mod[s, 2] == 0];
 
 IversonPowerFunction[x_, s_] := x^Iverson[s] * x^(2 Floor[(s - 1) / 2] + 1);
 
