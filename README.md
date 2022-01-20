@@ -53,11 +53,3 @@ Set repository secrets
 - `build-pdf.yml` builds project using `TeXLive`. Triggered on `pull_request`, `push` to `develop` branch
 - `build-and-deploy-pdf.yml` builds project using `TeXLive` and deploys to `GitHub Pages`. Triggered on `push` to `main`
   branch
-
-## Template example
-
-Compiled document looks like as follows
-
-<p align="center">
-  <img src="img/template_example.PNG" alt="template_example"/>
-</p>
