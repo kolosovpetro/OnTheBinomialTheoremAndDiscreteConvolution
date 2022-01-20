@@ -1,0 +1,174 @@
+\label{sec:polynomial-p-and-their-properties}
+We continue our mathematical journey from short overview of polynomial $\polynomialL{m}{x}{k}$ that is
+essential part of polynomial $\polynomialP{m}{b}{x}$ since that
+$\polynomialP{m}{b}{x} = \sum_{k=0}^{b-1} \polynomialL{m}{x}{k}$.
+Polynomial $\polynomialL{m}{x}{k}, \; m\in\mathbb{N}$ is polynomial of degree $2m$ in $x,k\in\mathbb{R}$,
+see definition~\eqref{eq:def_polynomial_l}.
+In explicit form the polynomial $\polynomialL{m}{x}{k}$ is as follows
+\begin{equation*}
+    \polynomialL{m}{x}{k} =
+    \coeffA{m}{m} k^m(x-k)^m +
+    \coeffA{m}{m-1} k^{m-1}(x-k)^{m-1} +
+    \cdots +
+    \coeffA{m}{0},
+\end{equation*}
+where $\coeffA{m}{r}$ are real coefficients by definition~\eqref{eq:def_coeff_a}.
+Coefficients $\coeffA{m}{r}$ are nonzero only for $r$ within the interval $r \in \{m\} \cup \left[0,\frac{m-1}{2}\right]$.
+For example,
+\begin{table}[H]
+    \begin{tabular}{c|cccccccc}
+        $m/r$ & 0 & 1       & 2      & 3      & 4   & 5    & 6     & 7 \\ [3px]
+        \hline
+        0     & 1 &         &        &        &     &      &       &       \\
+        1     & 1 & 6       &        &        &     &      &       &       \\
+        2     & 1 & 0       & 30     &        &     &      &       &       \\
+        3     & 1 & -14     & 0      & 140    &     &      &       &       \\
+        4     & 1 & -120    & 0      & 0      & 630 &      &       &       \\
+        5     & 1 & -1386   & 660    & 0      & 0   & 2772 &       &       \\
+        6     & 1 & -21840  & 18018  & 0      & 0   & 0    & 12012 &       \\
+        7     & 1 & -450054 & 491400 & -60060 & 0   & 0    & 0     & 51480
+    \end{tabular}
+    \caption{Coefficients $\coeffA{m}{r}$.} \label{tab:table}
+\end{table}
+Thus, the polynomial $\polynomialL{m}{x}{k}$ may also be written as
+\begin{equation*}
+    \polynomialL{m}{x}{k} = \coeffA{m}{m} k^m (x-k)^m + \sum_{r=0}^{\frac{m-1}{2}} \coeffA{m}{r} k^r (x-k)^r
+\end{equation*}
+For example, the polynomials $\polynomialL{m}{x}{k}$ for $0\leq m\leq 3$ are
+\begin{equation*}
+    \begin{split}
+        \polynomialL{0}{x}{k}
+        &= 1, \\
+        \polynomialL{1}{x}{k}
+        &= 6 k (x-k) + 1
+        = -6 k^2 + 6 k x + 1, \\
+        \polynomialL{2}{x}{k}
+        &=30 k^2 (x-k)^2+1
+        =30 k^4-60 k^3 x+30 k^2 x^2+1, \\
+        \polynomialL{3}{x}{k}
+        &= 140 k^3 (x-k)^3-14 k (x-k)+1 \\
+        &=-140 k^6+420 k^5 x-420 k^4 x^2+140 k^3 x^3+14 k^2-14 k x+1
+    \end{split}
+\end{equation*}
+It is worth to notice that $\polynomialL{m}{x}{k}$ is symmetrical over $x$
+\begin{ppty}
+    \label{ppty_symmetry_of_polynomial_l}
+    For every $x,k\in\mathbb{R}$
+    \begin{equation*}
+        \polynomialL{m}{x}{k} = \polynomialL{m}{x}{x-k}
+    \end{equation*}
+\end{ppty}
+This might be seen in the following table
+\begin{table}[H]
+    \begin{tabular}{c|cccccccc}
+        $x/k$ & 0 & 1  & 2  & 3  & 4  & 5  & 6  & 7 \\ [3px]
+        \hline
+        0     & 1 &    &    &    &    &    &    &   \\
+        1     & 1 & 1  &    &    &    &    &    &   \\
+        2     & 1 & 7  & 1  &    &    &    &    &   \\
+        3     & 1 & 13 & 13 & 1  &    &    &    &   \\
+        4     & 1 & 19 & 25 & 19 & 1  &    &    &   \\
+        5     & 1 & 25 & 37 & 37 & 25 & 1  &    &   \\
+        6     & 1 & 31 & 49 & 55 & 49 & 31 & 1  &   \\
+        7     & 1 & 37 & 61 & 73 & 73 & 61 & 37 & 1 \\
+    \end{tabular}
+    \caption{Values of $\polynomialL{1}{x}{k}$.}
+    \label{tab:fig_1}
+\end{table}
+Next we discuss the polynomial $\polynomialP{m}{b}{x}$.
+By definition~\eqref{eq:def_polynomial_p}, in extended form, the polynomial $\polynomialP{m}{b}{x}$ is
+\begin{equation*}
+    \begin{split}
+        \polynomialP{m}{b}{x}
+        &=\sum_{k=0}^{b-1} \sum_{r=0}^{m} \coeffA{m}{r} k^r(x-k)^r
+        =\sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{b-1} k^r(x-k)^r \\
+        &=\sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{b-1} k^r \sum_{j=0}^{r} (-1)^j \binom{r}{j} x^{r-j} k^j \\
+        &=\sum_{r=0}^{m} \sum_{j=0}^{r} (-1)^j x^{r-j} \binom{r}{j} \coeffA{m}{r} \sum_{k=0}^{b-1} k^{r+j} \\
+        &=\sum_{r=0}^{m} \sum_{j=0}^{r} x^{r-j} \binom{r}{j} \coeffA{m}{r} \frac{(-1)^j}{r+j+1} \sum_{s=0}^{r+j}
+        \binom{r+j+1}{s} \bernoulli{s} (b-1)^{r+j-s+1}
+    \end{split}
+\end{equation*}
+However, by symmetry~\eqref{ppty_symmetry_of_polynomial_l} the $\polynomialP{m}{b}{x}$ may also be written in the form
+\begin{equation*}
+    \begin{split}
+        \polynomialP{m}{b}{x}
+        &=\sum_{k=1}^{b} \sum_{r=0}^{m} \coeffA{m}{r} k^r(x-k)^r
+        =\sum_{k=1}^{b} \sum_{r=0}^{m} \coeffA{m}{r} k^r \sum_{t=0}^{r} (-1)^{r-t} x^t \binom{r}{t} k^{r-t} \\
+        &=\sum_{t=0}^{m} x^t \underbrace{\sum_{k=1}^{b} \sum_{r=t}^{m} (-1)^{r-t} \binom{r}{t}
+        \coeffA{m}{r} k^{2r-t}}_{(-1)^{m-t} \polynomialX{m}{t}{b}}
+    \end{split}
+\end{equation*}
+From this formula it may be not immediately clear why $\polynomialX{m}{t}{b}$ represent polynomials in $b$.
+However, this can be seen if we change the summation order and use Faulhaber's formula
+$\sum_{k=1}^{n} k^{p}=\frac{1}{p+1}\sum _{j=0}^{p} \binom{p+1}{j} \bernoulli{j} n^{p+1-j}$
+to obtain
+\begin{equation*}
+    \polynomialX{m}{t}{b} = (-1)^m \sum_{r=t}^{m} \binom{r}{t} \coeffA{m}{r} \frac{(-1)^r}{2r-t+1}
+    \sum_{\ell=0}^{2r-t} \binom{2r-t+1}{\ell} \bernoulli{\ell} b^{2r-t+1-\ell}
+\end{equation*}
+Introducing $k=2r-t+1-\ell$ we further get the formula
+\begin{equation*}
+    \polynomialX{m}{t}{b} = (-1)^m \sum_{k=1}^{2m-t+1} b^k
+    \underbrace{\sum_{r=t}^m \binom{r}{t} \coeffA{m}{r} \frac{(-1)^r}{2r-t+1} \binom{2r-t+1}{k}
+    \bernoulli{2r-t+1-k}}_{\coeffH{m}{t}{k}}
+\end{equation*}
+Polynomials $\polynomialX{3}{t}{j}, \; 0\leq t \leq 3$ are
+\begin{equation*}
+    \begin{split}
+        \polynomialX{3}{0}{j}
+        &=7 j^2 - 28 j^3 + 70 j^5 - 70 j^6 + 20 j^7, \\
+        \polynomialX{3}{1}{j}
+        &=7 j - 42 j^2 + 175 j^4 - 210 j^5 + 70 j^6, \\
+        \polynomialX{3}{2}{j}
+        &=-14 j + 140 j^3 - 210 j^4 + 84 j^5, \\
+        \polynomialX{3}{3}{j}
+        &=35 j^2 - 70 j^3 + 35 j^4
+    \end{split}
+\end{equation*}
+Polynomials $\coeffH{3}{t}{k}$ are defined by~\eqref{eq:def_coeff_h} and examples for $m=3, \; 0\leq t \leq 3$ are
+\begin{equation*}
+    \begin{split}
+        \coeffH{3}{0}{k}
+        &=\bernoulli{1-k} \binom{1}{k} + \frac{14}{3} \bernoulli{3-k} \binom{3}{k} - 20 \bernoulli{7 - k} \binom{7}{k}, \\
+        \coeffH{3}{1}{k}
+        &=7 \bernoulli{2-k} \binom{2}{k} - 70 \bernoulli{6-k} \binom{6}{k}, \\
+        \coeffH{3}{2}{k}
+        &=-84 \bernoulli{5-k} \binom{5}{k}, \\
+        \coeffH{3}{3}{k}
+        &=-35 \bernoulli{4-k} \binom{4}{k}
+    \end{split}
+\end{equation*}
+It gives us an opportunity to review the $\polynomialP{m}{b}{x}$ from different prospective, for instance
+\begin{equation}
+    \label{eq:p_all_forms}
+    \polynomialP{m}{b}{x}
+    =\sum_{r=0}^{m} (-1)^{m-r} \polynomialX{m}{r}{b} \cdot x^r
+    =\sum_{r=0}^{m} \sum_{\ell=1}^{2m-r+1} (-1)^{2m-r} \coeffH{m}{r}{\ell} \cdot b^\ell \cdot x^r
+\end{equation}
+Equation~\eqref{eq:p_all_forms} clearly states why $\polynomialP{m}{b}{x}$ is polynomial in $x,b$.
+For example,
+\begin{equation*}
+    \begin{split}
+        \polynomialP{0}{b}{x}
+        &=b, \\
+        \polynomialP{1}{b}{x}
+        &=3 b^2 - 2 b^3 - 3 b x + 3 b^2 x, \\
+        \polynomialP{2}{b}{x}
+        &=10 b^3 - 15 b^4 + 6 b^5 \\
+        &- 15 b^2 x + 30 b^3 x - 15 b^4 x \\
+        &+ 5 b x^2 - 15 b^2 x^2 + 10 b^3 x^2, \\
+        \polynomialP{3}{b}{x}
+        &=-7 b^2 + 28 b^3 - 70 b^5 + 70 b^6 - 20 b^7 \\
+        &+ 7 b x - 42 b^2 x + 175 b^4 x - 210 b^5 x + 70 b^6 x \\
+        &+ 14 b x^2 - 140 b^3 x^2 + 210 b^4 x^2 - 84 b^5 x^2 \\
+        &+ 35 b^2 x^3 - 70 b^3 x^3 + 35 b^4 x^3
+    \end{split}
+\end{equation*}
+The following property also holds for $\polynomialP{m}{b}{x}$
+\begin{ppty}
+    \label{prop_p_identity}
+    For every $m\in \mathbb{N}, \; x,b\in\mathbb{R}$
+    \begin{equation*}
+        \polynomialP{m}{b+1}{x} = \polynomialP{m}{b}{x} + \polynomialL{m}{x}{b}
+    \end{equation*}
+\end{ppty}

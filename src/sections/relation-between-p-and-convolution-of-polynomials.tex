@@ -1,0 +1,93 @@
+In this section we discuss the relation between $\polynomialP{m}{b}{x}$ and discrete convolution of
+polynomials.
+To show that $\polynomialP{m}{b}{x}$ involves the discrete convolution of polynomial $n^r$
+let's remind the definition of $\polynomialP{m}{b}{x}$
+\begin{equation*}
+    \polynomialP{m}{b}{x} = \sum_{k=0}^{b-1} \sum_{r=0}^{m} \coeffA{m}{r} k^r (x-k)^r
+    = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{b-1} k^r (x-k)^r
+\end{equation*}
+A discrete convolution of defined over set of integers $\mathbb{Z}$ function $f$ is
+\begin{equation*}
+(f \ast f)[n]
+    = \sum_{k} f(k) f(n-k)
+\end{equation*}
+General formula of discrete convolution for polynomials $f(n) = n^j, \; n\geq a \in \mathbb{R}$ may be derived immediately
+\begin{equation*}
+    \begin{split}
+        \convPower{n}{j}{x}
+        &=\sum_{k} k^j (x-k)^j [k\geq a][x-k\geq a] \\
+        &=\sum_{k} k^j (x-k)^j [k\geq a][k\leq x-a] \\
+        &=\sum_{k} k^j (x-k)^j [a \leq k \leq x-a] \\
+        &=\sum_{k=a}^{x-a} k^j (x-k)^j,
+    \end{split}
+\end{equation*}
+where $[a \leq k \leq x-a]$ is Iverson's bracket~\cite{APL}.
+\begin{lem}
+    \label{lemma_disc_conv_identity}
+    For every $n\in\mathbb{N}, \; x\in\mathbb{R}$
+    \[
+        \convPower{n}{r}{x} = \sum_{k=0}^{x} k^r (x-k)^r, \quad n\geq 0.
+    \]
+\end{lem}
+Thus, the corollary follows
+\begin{cor}
+    \label{cor_polynomial_p_and_macaulay_convolution}
+    By Lemma~\ref{lemma_disc_conv_identity} the polynomial $\polynomialP{m}{b}{n}$ might be expressed in terms
+    of discrete convolution as follows
+    \[
+        \polynomialP{m}{x+1}{x} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 0.
+    \]
+\end{cor}
+Therefore, another polynomial identity follows
+\begin{thm}
+    \label{thm_odd_power_by_macaulays_convolution}
+    By Lemma~\ref{lemma_polynomial_p_and_odd_power}, Corollary~\ref{cor_polynomial_p_and_macaulay_convolution}
+    and property~\ref{prop_p_identity}, for every $m\in\mathbb{N}, \; x\in\mathbb{R}$
+    \begin{equation*}
+        x^{2m+1} = -1 + \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 0.
+    \end{equation*}
+\end{thm}
+Now we notice the following identity in terms of polynomial $\polynomialP{m}{b}{x}$ and
+discrete convolution $\convPower{n}{j}{x}$
+\begin{prop}
+    \label{prop_polynomial_p_and_macaulay_convolution_strict}
+    For every $m \in \mathbb{N}, \; x\in\mathbb{R}$
+    \begin{equation*}
+        \begin{split}
+            \polynomialP{m}{x}{x}
+            &=\sum_{r=0}^{m} \coeffA{m}{r} \left(0^r x^r + \sum_{k=1}^{x-1} k^r (x-k)^r \right) \\
+            &=\sum_{r=0}^{m} \coeffA{m}{r} 0^r x^r + \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x} \\
+            &=1 + \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 1.
+        \end{split}
+    \end{equation*}
+\end{prop}
+Since that for all $r$ in $\coeffA{m}{r} 0^r x^r$ we have
+\begin{equation*}
+    \coeffA{m}{r} 0^r x^r =
+    \begin{cases}
+        1, & \mbox{if } r=0 \\
+        0, & \mbox{if } r>0
+    \end{cases}
+\end{equation*}
+Above is true because $\coeffA{m}{0}=1$ for every $m\in\mathbb{N}$, and $x^0 = 1$
+for every $x$, ~\cite{Grah94SN}.
+Hence, the following identity between $\polynomialP{m}{b}{x}$ and
+discrete convolution $\convPower{n}{j}{x}$ holds
+\begin{thm}
+    \label{thm_odd_power_by_macaulays_convolution_strict}
+    By Lemma~\ref{lemma_polynomial_p_and_odd_power} and
+    Proposition~\ref{prop_polynomial_p_and_macaulay_convolution_strict},
+    for every $m\in\mathbb{N}, \; x\in\mathbb{R}$
+    \begin{equation*}
+        x^{2m+1} = 1 + \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 1.
+    \end{equation*}
+\end{thm}
+\begin{cor}
+    \label{cor_sum_of_coeffs_a}
+    By Theorem~\ref{thm_odd_power_by_macaulays_convolution_strict}, for all $m\in\mathbb{N}$
+    \begin{equation*}
+        \sum_{r=0}^{m} \coeffA{m}{r} = 2^{2m+1} - 1
+    \end{equation*}
+\end{cor}
+Corollary~\ref{cor_sum_of_coeffs_a} holds since that convolution $\convPower{n}{j}{x}=1, \; n\geq 1$
+for each $r$ when $x=2$.

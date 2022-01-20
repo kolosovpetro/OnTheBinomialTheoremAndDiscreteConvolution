@@ -1,0 +1,46 @@
+\begin{lem}
+    \label{lemma_polynomial_p_and_odd_power}
+    For every $m\in\mathbb{N}, \; x,y\in\mathbb{R}$
+    \begin{equation*}
+        \polynomialP{m}{x+y}{x+y} = \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r
+    \end{equation*}
+\end{lem}
+By Lemma~\ref{lemma_polynomial_p_and_odd_power} and equation~\eqref{eq:p_all_forms} the following
+polynomial identities straightforward
+\begin{equation*}
+    x^{2m+1}
+    =\sum_{r=0}^{m} \sum_{\ell=1}^{2m-r+1} (-1)^{2m-r} \coeffH{m}{r}{\ell} \cdot x^{\ell+r}
+    =\sum_{r=0}^{m} (-1)^{m-r} \polynomialX{m}{r}{x} \cdot x^r
+\end{equation*}
+For instance,
+\begin{equation*}
+    \polynomialP{2}{x+y}{x+y} = (x + y) (x^4 + 4 x^3 y + 6 x^2 y^2 + 4 x y^3 + y^4).
+\end{equation*}
+In addition, the following identities hold
+\begin{equation*}
+    \begin{split}
+    (x+y)
+        ^{2m+1}
+        &=\sum_{r=0}^{m} \sum_{\ell=1}^{2m-r+1} (-1)^{2m-r} \coeffH{m}{r}{\ell} \cdot (x+y)^{\ell+r} \\
+        &=\sum_{r=0}^{m} (-1)^{m-r} \polynomialX{m}{r}{x+y} \cdot (x+y)^r
+    \end{split}
+\end{equation*}
+Obviously, Multinomial expansion of $t$-fold sum $(\multifoldSum{t})^{2m+1}$ can be reached
+by $\polynomialP{m}{b}{\multifoldSum{t}}$ as well
+\begin{cor}
+    For all $x_1,x_2,\ldots, x_t\in\mathbb{R}, \; m \in \mathbb{N}$
+    \begin{equation*}
+        \polynomialP{m}{\multifoldSum{t}}{\multifoldSum{t}}
+        =
+        \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{s=1}^{t} x_t^{k_s}
+    \end{equation*}
+\end{cor}
+Moreover, the following multinomial identities hold
+\begin{equation*}
+    \begin{split}
+    (\multifoldSum{t})
+        ^{2m+1}
+        &=\sum_{r=0}^{m} \sum_{\ell=1}^{2m-r+1} (-1)^{2m-r} \coeffH{m}{r}{\ell} \cdot (\multifoldSum{t})^{\ell+r} \\
+        &=\sum_{r=0}^{m} (-1)^{m-r} \polynomialX{m}{r}{\multifoldSum{t}} \cdot (\multifoldSum{t})^r
+    \end{split}
+\end{equation*}

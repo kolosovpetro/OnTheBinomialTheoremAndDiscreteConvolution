@@ -1,0 +1,50 @@
+We now set the following notation, which remains fixed for the remainder of this paper:
+\begin{itemize}
+    \item $\coeffA{m}{r}, \; m\in\mathbb{N}$ is a real coefficient defined recursively
+    \begin{equation}
+        \label{eq:def_coeff_a}
+        \coeffA{m}{r} \colonequals
+        \begin{cases}
+        (2r+1)
+            \binom{2r}{r}, & \text{if } r=m; \\
+            (2r+1) \binom{2r}{r} \sum_{d=2r+1}^{m} \coeffA{m}{d} \binom{d}{2r+1} \frac{(-1)^{d-1}}{d-r}
+            \bernoulli{2d-2r}, & \text{if } 0 \leq r<m; \\
+            0, & \text{if } r<0 \text{ or } r>m,
+        \end{cases}
+    \end{equation}
+    where $\bernoulli{t}$ are Bernoulli numbers~\cite{WeissteinBernoulli}.
+    It is assumed that $\bernoulli{1}=\frac{1}{2}$.
+
+    \item $\polynomialP{m}{b}{x}, \; m\in\mathbb{N}$ is a $2m+1$-degree integer-valued polynomial in $b,x\in\mathbb{R}$
+    \begin{equation}
+        \label{eq:def_polynomial_p}
+        \polynomialP{m}{b}{x} \colonequals \sum_{k=0}^{b-1} \sum_{r=0}^{m} \coeffA{m}{r} k^r(x-k)^r
+    \end{equation}
+
+    \item $\coeffH{m}{t}{b}, \; m,t,b\in\mathbb{N}$ is a polynomial defined as
+    \begin{equation}
+        \label{eq:def_coeff_h}
+        \coeffH{m}{t}{b}
+        \colonequals
+        \sum_{j=t}^{m} \binom{j}{t} \coeffA{m}{j} \frac{(-1)^j}{2j-t+1} \binom{2j-t+1}{b} \bernoulli{2j-t+1-b}
+    \end{equation}
+
+    \item $\polynomialX{m}{t}{j}, \; m,t\in\mathbb{N}$ is polynomial of degree $2m+1-t$ in $j\in\mathbb{R}$
+    \begin{equation}
+        \label{eq:def_coeff_x}
+        \polynomialX{m}{t}{j} \colonequals (-1)^m \sum_{k=1}^{2m+1-t} \coeffH{m}{t}{k} \cdot j^k
+    \end{equation}
+
+    \item $\polynomialL{m}{x}{k}, \; m\in\mathbb{N}$ is $2m$ degree polynomial in $x,k\in\mathbb{R}$
+    \begin{equation}
+        \label{eq:def_polynomial_l}
+        \polynomialL{m}{x}{k} \colonequals \sum_{r=0}^{m} \coeffA{m}{r} k^r(x-k)^r
+    \end{equation}
+
+    \item $(f\ast f)[n]$ is discrete convolution~\cite{DiscConv} of function $f$ defined over set of integers $\mathbb{Z}$
+    \[
+        (f\ast f)[n] = \sum_{k} f(k) f(n-k)
+    \]
+
+
+\end{itemize}
