@@ -1,18 +1,26 @@
 To fulfill our study we provide an opportunity to verify its results by means of Wolfram Mathematica language.
 
 \subsection{Mathematica commands} \label{subsec:mathematica-commands}
-Proceeding to the repository~\cite{PK22Source} the following commands to verify the formulas:
+Proceeding to the repository~\cite{PK22Source} reader is able to find there a folder named \texttt{mathematica}
+that contains the files
+\begin{itemize}
+    \item \texttt{OnTheBinomialTheoremAndDiscreteConvolution.m} is a package file with definitions
+    \item \texttt{OnTheBinomialTheoremAndDiscreteConvolution.nb} is a notebook file with examples.
+\end{itemize}
+The following commands may be used to reproduce the results of this manuscript:
 \begin{itemize}
     \item \texttt{A[m, r]} returns the real coefficient $\coeffA{m}{r}$ defined by~\eqref{eq:def_coeff_a}.
     \item \texttt{PolynomialL[m, n, k]} returns the polynomial $\polynomialL{m}{n}{k}$ defined by~\eqref{eq:def_polynomial_l}.
-    \item \texttt{PolynomialP[m, x, b]} returns the polynomial $\polynomialP{m}{x}{b}$ defined by~\eqref{eq:def_polynomial_p}.
+    \item \texttt{PolynomialP[m, x, b]} returns the polynomial $\polynomialP{m}{b}{x}$ defined by~\eqref{eq:def_polynomial_p}.
     \item \texttt{Expand[PolynomialP[m, x + y, x + y]]} verifies the Lemma~\ref{lemma_polynomial_p_and_odd_power}.
     \item \texttt{PolynomialH[m, t, j]} returns the polynomial $\coeffH{m}{t}{j}$ defined by~\eqref{eq:def_coeff_h}.
     \item \texttt{PolynomialX[m, t, k]} returns the polynomial $\polynomialX{m}{t}{k}$ defined by~\eqref{eq:def_coeff_x}.
     \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionTest[m, x + y]]} verifies the Corollary~\ref{cor_bin_exp_and_macaulay_conv}.
     \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionStrictTest[m, x + y]]} verifies the Corollary~\ref{cor_bin_exp_and_macaulay_conv_strict}.
-    \item \texttt{ConvPowerIdentityParametric[m, x, a]} verifies equation~\eqref{eq:parametric-identity}.
-    \item \texttt{ConvPowerIdentityStrictParametric[m, x, a]} verifies equation~\eqref{eq:parametric-identity-strict}.
+    \item \texttt{DiscreteConvolutionPowerIdentityParametricTest[m, x, a]} verifies an equation~\eqref{eq:parametric-identity}.
+    Usage \texttt{Column[Table[DiscreteConvolutionPowerIdentityParametricTest[1, x, 1], {x, 3, 20}], Left]}.
+    \item \texttt{DiscreteConvolutionPowerIdentityStrictParametricTest[m, x, a]} verifies an equation~\eqref{eq:parametric-identity-strict}.
+    Usage \texttt{Column[Table[DiscreteConvolutionPowerIdentityStrictParametricTest[1, x, 1], {x, 3, 20}], Left]}.
 \end{itemize}
 
 \subsection{Examples} \label{subsec:examples}
@@ -30,7 +38,7 @@ For example, given $m=1$ we have the following values of $\polynomialL{1}{x}{k}$
         6     & 1 & 31 & 49 & 55 & 49 & 31 & 1  &   \\
         7     & 1 & 37 & 61 & 73 & 73 & 61 & 37 & 1
     \end{tabular}
-    \caption{Values of $\polynomialL{1}{x}{k}$.}
+    \caption{Values of $\polynomialL{1}{x}{k}$. See OEIS entry: \href{https://oeis.org/A300656}{\texttt{A300656}}.}
     \label{tab:tab_3}
 \end{table}
 From Table~\ref{tab:tab_3} it is seen that
@@ -58,7 +66,7 @@ Another case, given $m=2$ we have the following values of $\polynomialL{2}{x}{k}
         6     & 1 & 751  & 1921 & 2431 & 1921 & 751  & 1    &   \\
         7     & 1 & 1081 & 3001 & 4321 & 4321 & 3001 & 1081 & 1
     \end{tabular}
-    \caption{Values of $\polynomialL{2}{x}{k}$.}
+    \caption{Values of $\polynomialL{2}{x}{k}$. See OEIS entry: \href{https://oeis.org/A300656}{\texttt{A300656}}.}
     \label{tab:tab_4}
 \end{table}
 Again, an odd-power identity~\ref{lemma_polynomial_p_and_odd_power} holds
@@ -72,5 +80,3 @@ Again, an odd-power identity~\ref{lemma_polynomial_p_and_odd_power} holds
         \polynomialP{2}{5}{5} &= 1+481+1081+1081+481 = 5^5
     \end{split}
 \end{equation*}
-Tables ~\ref{tab:tab_3}, ~\ref{tab:tab_4} are entries \href{https://oeis.org/A287326}{\texttt{A287326}},
-\href{https://oeis.org/A300656}{\texttt{A300656}} in~\cite{Sloane_theencyclopedia}.

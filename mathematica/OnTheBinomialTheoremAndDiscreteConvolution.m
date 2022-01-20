@@ -28,7 +28,7 @@ MatrixPolynomialL::usage= "Returns the MxN matrix filled with values of polynomi
 
 MacaulayPowerFunction::usage= "Returns the Macaulay power function that satisfies the condiditons x >= a."
 
-MacaulayPowerFunctionStrict::usage= "Returns the Macaulay power function that sarisfies the condiditons x > a."
+MacaulayPowerFunctionStrict::usage= "Returns the Macaulay power function that satisfies the condiditons x > a."
 
 DiscreteConvolutionOfMacaulayPowerFunction::usage= "Returns the discrete convolution of MacaulayPowerFunction."
 
