@@ -38,6 +38,9 @@ PolynomialL::usage = "Returns the polynomial L(m, n, k) for m >= 0 integer, k <=
 PolynomialL[m_, n_, k_] :=
     Sum[A[m, r] * k^r * (n - k) ^ r, {r, 0, m}];
 
+PrintTriangleOfPolynomialL::usage = "Prints a triangle of PolynomialL[m, n, k] values for fixed integers m and k <= n."
+PrintTriangleOfPolynomialL[m_, rows_] := Column[Table[PolynomialL[m, n, k], {n, 0, rows}, {k, 0, n}], Left];
+
 PolynomialX::usage = "Returns the polynomial X(m, t, a, b). See definition "
 PolynomialX[m_, t_, j_] :=
     Sum[(-1) ^ m * PolynomialH[m, t, k] * j^k, {k, 1, 2 m - t + 1}];
