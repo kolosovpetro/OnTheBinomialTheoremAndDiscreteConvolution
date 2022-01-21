@@ -13,6 +13,15 @@ of polynomial $n^j, \; j\in \mathbb{N}$
 \[
     \polynomialP{m}{x+1}{x} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 0.
 \]
+It is of first necessity to notice that  $n^r$ of discrete convolution $\convPower{n}{r}{x}$ evaluated at $x$
+is implicit piecewise-defined polynomial such as
+\begin{equation*}
+    n^{r} =
+    \begin{cases}
+        \underbrace{n \cdot n \cdots n}_{\mathrm{r \; times}}, & \mbox{if } n \geq 0 \\
+        0, & \mbox{otherwise}
+    \end{cases}
+\end{equation*}
 Therefore, it is easy to notice the following identities in terms of Binomial theorem and discrete convolution,
 see Corollaries~\ref{cor_bin_exp_and_macaulay_conv},~\ref{cor_bin_exp_and_macaulay_conv_strict}
 \begin{equation*}
