@@ -6,9 +6,11 @@ PiecewiseDefinedPowerFunction::usage= "Returns the power function defined as f =
 
 DiscreteConvolutionOfPiecewiseDefinedPowerFunction::usage= "Returns the discrete convolution of the piecewise defined power funtion f[r, t, n]."
 
-ContinuousConvolutionOfPiecewiseDefinedPowerFunction::usage= "Gives cont. convolution of funtion f[r, t, n]. "
+ContinuousConvolutionOfPiecewiseDefinedPowerFunction::usage= "Returns the continuous convolution of the piecewise defined power funtion f[r, t, n]."
 
 A::usage= "Returns the real coefficient A[n, k] for non-negative ingeters n, k such that n <= k. See definition "
+
+SumOfA::usage= "Returns the sum of coefficients A[m, r] over r <= m and non-negative m."
 
 DiscreteConvolutionLikeSumOfPowers::usage= "Returns convolution-like sum of power defined as Sum[k^r (n - k)^r, {k, 0, b-1}]."
 
@@ -71,6 +73,8 @@ A[n_, k_] := 0;
 A[n_, k_] := (2k + 1) * Binomial[2k, k] * Sum[A[n, j] * Binomial[j, 2k + 1] * (-1)^(j - 1) / (j - k) * BernoulliB[2j - 2k], {j, 2k + 1, n}] /; 0 <= k < n;
 A[n_, k_] := (2n + 1) * Binomial[2n, n] /; k == n;
 
+SumOfA[m_] := Sum[A[m, r], {r, 0, m}];
+
 PolynomialL[m_, n_, k_] := Sum[A[m, r] * k ^ r * (n - k)^r, {r, 0, m}];
 
 PolynomialP[m_, n_, b_] := Sum[PolynomialL[m, n, k], {k, 0, b-1}];
@@ -111,7 +115,7 @@ BinomialCoefficientAsPolynomial[t_, k_] := 1 / k! * Product[(t - w), {w, 0, k - 
 
 (* Convolutional tables and data sets. *)
 
-DiscreteSelfConvolutionOfPowerFunction[m_, r_] := Column[Table[PiecewisePowDiscConv[n - k, k, r], {n, 0, m}, {k, 0, n}], Left];
+DiscreteSelfConvolutionOfPowerFunction[m_, r_] := Column[Table[PiecewiseDefinedPowerFunction[n - k, k, r], {n, 0, m}, {k, 0, n}], Left];
 
 DiscreteConvolutionOfMacaulayPowerFunctionTable[m_, a_] := Column[Table[DiscreteConvolutionOfMacaulayPowerFunction[n - k, k, a], {n, 0, m}, {k, 0, n}], Left];
 

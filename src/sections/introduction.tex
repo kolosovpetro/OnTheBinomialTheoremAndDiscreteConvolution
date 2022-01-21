@@ -18,22 +18,22 @@ see Corollaries~\ref{cor_bin_exp_and_macaulay_conv},~\ref{cor_bin_exp_and_macaul
 \begin{equation*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x+y}
     =
-    1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n \geq 0.
+    1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n \geq 0,
 \end{equation*}
 \begin{equation*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x+y}
     =
-    -1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n \geq 1.
+    -1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n > 0.
 \end{equation*}
 Also, the following generalizations for multinomial case are discussed,
 see Corollaries~\ref{cor_mult_exp_and_macaulay_conv},~\ref{cor_mult_exp_and_macaulay_conv_strict}
 \begin{gather*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{\multifoldSum{t}} =
     1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell},
-    \quad n \geq 0.\\
+    \quad n \geq 0,\\
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{\multifoldSum{t}} =
     -1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell},
-    \quad n \geq 1.\\
+    \quad n > 0.\\
 \end{gather*}
 A few polynomial identities are straightforward as well,
 Theorems~\ref{thm_odd_power_by_macaulays_convolution},~\ref{thm_odd_power_by_macaulays_convolution_strict}
