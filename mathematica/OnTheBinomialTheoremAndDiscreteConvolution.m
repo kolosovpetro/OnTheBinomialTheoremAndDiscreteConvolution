@@ -95,7 +95,7 @@ MacaulayPowerFunctionStrict[x_, n_, a_] := Piecewise[{{(x - a)^n, x > a}, {0, Tr
 
 IversonBracket[s_] := Boole[Mod[s, 2] == 0];
 
-IversonPowerFunction[x_, s_] := x^Iverson[s] * x^(2 Floor[(s - 1) / 2] + 1);
+IversonPowerFunction[x_, s_] := x ^ IversonBracket[s] * x ^(2 Floor[(s - 1) / 2] + 1);
 
 DiscreteConvolutionOfPiecewiseDefinedPowerFunction[x_, n_, a_] := Sum[PiecewiseDefinedPowerFunction[k, n, a] * PiecewiseDefinedPowerFunction[x - k, n, a], {k, -Infinity, +Infinity}];
 
