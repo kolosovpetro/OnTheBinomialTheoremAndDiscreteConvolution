@@ -21,6 +21,10 @@ The following commands may be used to reproduce the results of this manuscript:
     Usage \texttt{Column[Table[DiscreteConvolutionPowerIdentityParametricTest[1, x, 1], {x, 3, 20}], Left]}.
     \item \texttt{DiscreteConvolutionPowerIdentityStrictParametricTest[m, x, a]} verifies an equation~\eqref{eq:parametric-identity-strict}.
     Usage \texttt{Column[Table[DiscreteConvolutionPowerIdentityStrictParametricTest[1, x, 1], {x, 3, 20}], Left]}.
+    \item \texttt{PolynomialIdentityInvolvingX[m, x, b]} validates an identity at~\eqref{eq:p_all_forms}
+    $$\polynomialP{m}{b}{x} = \sum_{r=0}^{m} (-1)^{m-r} \polynomialX{m}{r}{b} \cdot x^r$$
+    \item \texttt{PolynomialIdentityInvolvingH[m, n, b]} validates an identity at~\eqref{eq:p_all_forms}.
+    $$\polynomialP{m}{b}{x} =\sum_{r=0}^{m} \sum_{\ell=1}^{2m-r+1} (-1)^{2m-r} \coeffH{m}{r}{\ell} \cdot b^\ell \cdot x^r$$
 \end{itemize}
 
 \subsection{Examples} \label{subsec:examples}
