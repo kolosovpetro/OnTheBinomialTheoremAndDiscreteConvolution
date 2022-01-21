@@ -63,7 +63,7 @@ OrdinaryPowerSumS[p_, n_] :=
 
 DiscreteSelfConvolutionOfPowerFunction::usage = "Returns the discrete self-convolution of power function n ^ k for n >= 0."
 DiscreteSelfConvolutionOfPowerFunction[m_, r_] :=
-    Column[Table[PiecewiseDefinedPowerFunction[n - k, k, r], {n, 0, m
+    Column[Table[PiecewiseDefinedPowerFunction[n, k, r] * PiecewiseDefinedPowerFunction[n - k, k, r], {n, 0, m
         }, {k, 0, n}], Left];
 
 MatrixPolynomialL::usage = "Returns the MxN matrix filled with values of polynomial L(m, n, k)."
@@ -142,6 +142,9 @@ PolynomialIdentityInvolvingH::usage = "Defines the top right part of an equation
 PolynomialIdentityInvolvingH[m_, n_, b_] :=
     Sum[Sum[(-1) ^ (2 m - r) * PolynomialH[m, r, l] * b^l * n^r, {l, 
         1, 2 m - r + 1}], {r, 0, m}];
+
+PolynomialR::usage = "Polynomial sum_{j=0}^{r} frac{1}{(-1)^j} binom{r}{j} sum_{k=0}^{b-1} k^{2r-j}."
+PolynomialR[r_, b_] := Sum[1 / (-1) ^ j * Binomial[r, j] * OrdinaryPowerSumS[2 r - j, b], {j, 0, r}];
 
 Begin["`Private`"]
 
