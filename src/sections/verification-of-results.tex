@@ -10,6 +10,8 @@ that contains the files
 The following commands may be used to reproduce the results of this manuscript:
 \begin{itemize}
     \item \texttt{A[m, r]} returns the real coefficient $\coeffA{m}{r}$ defined by~\eqref{eq:def_coeff_a}.
+    \item \texttt{PrintTriangleOfA[rows]} prints the table of coefficients $\coeffA{m}{r}$. \\
+    Command \texttt{PrintTriangleOfA[7]} reproduces the table (\ref{tab:table_of_coefficients_a}).
     \item \texttt{PolynomialL[m, n, k]} returns the polynomial $\polynomialL{m}{n}{k}$ defined by~\eqref{eq:def_polynomial_l}.
     \item \texttt{PolynomialP[m, x, b]} returns the polynomial $\polynomialP{m}{b}{x}$ defined by~\eqref{eq:def_polynomial_p}.
     \item \texttt{Expand[PolynomialP[m, x + y, x + y]]} verifies the Lemma~\ref{lemma_polynomial_p_and_odd_power}.
@@ -22,9 +24,9 @@ The following commands may be used to reproduce the results of this manuscript:
     \item \texttt{DiscreteConvolutionPowerIdentityStrictParametricTest[m, x, a]} verifies an equation~\eqref{eq:parametric-identity-strict}.
     Usage \texttt{Column[Table[DiscreteConvolutionPowerIdentityStrictParametricTest[1, x, 1], {x, 3, 20}], Left]}.
     \item \texttt{PolynomialIdentityInvolvingX[m, x, b]} validates an identity at~\eqref{eq:p_all_forms}
-    $$\polynomialP{m}{b}{x} = \sum_{r=0}^{m} (-1)^{m-r} \polynomialX{m}{r}{b} \cdot x^r$$
+    \[\polynomialP{m}{b}{x} = \sum_{r=0}^{m} (-1)^{m-r} \polynomialX{m}{r}{b} \cdot x^r\]
     \item \texttt{PolynomialIdentityInvolvingH[m, n, b]} validates an identity at~\eqref{eq:p_all_forms}.
-    $$\polynomialP{m}{b}{x} =\sum_{r=0}^{m} \sum_{\ell=1}^{2m-r+1} (-1)^{2m-r} \coeffH{m}{r}{\ell} \cdot b^\ell \cdot x^r$$
+    \[\polynomialP{m}{b}{x} =\sum_{r=0}^{m} \sum_{\ell=1}^{2m-r+1} (-1)^{2m-r} \coeffH{m}{r}{\ell} \cdot b^\ell \cdot x^r\]
 \end{itemize}
 
 \subsection{Examples} \label{subsec:examples}

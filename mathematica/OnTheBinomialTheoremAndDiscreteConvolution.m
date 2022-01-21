@@ -26,6 +26,9 @@ A[n_, k_] :=
 A[n_, k_] :=
     (2 n + 1) * Binomial[2 n, n] /; k == n;
 
+PrintTriangleOfA::usage = "Prints the triangle on A[n,k]. See table 1 at ."
+PrintTriangleOfA[rows_] := Column[Table[A[n, k], {n, 0, rows}, {k, 0, n}], Left];
+
 SumOfA::usage = "Returns the sum of coefficients A[m, r] over r <= m and non-negative m."
 SumOfA[m_] :=
     Sum[A[m, r], {r, 0, m}];
