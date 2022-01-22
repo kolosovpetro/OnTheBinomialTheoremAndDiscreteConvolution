@@ -57,7 +57,10 @@ PolynomialP::usage = "Returns the polynomial P[m, b, x]. See definition "
 PolynomialP[m_, n_, b_] :=
     Sum[PolynomialL[m, n, k], {k, 0, b - 1}];
 
-OrdinaryPowerSumS::usage = "Returns ordinary power sum S[p_, n_]:= Sum[k^p, {k, 0, n-1}]."
+PrintListPolynomialP::usage = "Prints the list of polynomials P iterating over the m."
+PrintListPolynomialP[rows_, n_, b_] := Column[Table[StringForm["P(`1`, `2`, `3`) is: `4`", iterator, n, b, PolynomialP[iterator, n, b]], {iterator, 0, rows}], Left];
+
+OrdinaryPowerSumS::usage = "Returns an ordinary power sum S[p_, n_]:= Sum[k^p, {k, 0, n-1}]."
 OrdinaryPowerSumS[p_, n_] :=
     Sum[k^p, {k, 0, n - 1}];
 

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    103338,       2934]
-NotebookOptionsPosition[     86280,       2638]
-NotebookOutlinePosition[     86686,       2654]
-CellTagsIndexPosition[     86643,       2651]
+NotebookDataLength[    233458,       4971]
+NotebookOptionsPosition[    215618,       4662]
+NotebookOutlinePosition[    216021,       4678]
+CellTagsIndexPosition[    215978,       4675]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2634,10 +2634,2034 @@ Cell[BoxData[
  CellChangeTimes->{{3.851785601696986*^9, 3.8517856663057947`*^9}},
  CellLabel->
   "Out[647]=",ExpressionUUID->"e158871a-d18a-4a87-83d9-b6d4f487cd75"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"listOfP", " ", "=", " ", 
+  RowBox[{"PrintListPolynomialP", "[", 
+   RowBox[{"10", ",", " ", "n", ",", " ", "b"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.851837739028367*^9, 3.8518378057483473`*^9}, {
+  3.85183822666092*^9, 3.8518382272609434`*^9}, {3.851838430732529*^9, 
+  3.851838430972732*^9}, {3.8518386940545096`*^9, 3.8518386963028355`*^9}, {
+  3.8518388299393997`*^9, 3.8518388537400045`*^9}, {3.8518388922382045`*^9, 
+  3.8518388926854076`*^9}, {3.851838993137748*^9, 3.851838993568888*^9}},
+ CellLabel->
+  "In[394]:=",ExpressionUUID->"a1849d11-4299-4bbd-8b64-96a3f478e26b"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"0\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{\\\"b\\\"}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 0, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"1\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{RowBox[{\\\"-\\\", \\\"b\\\"}], \\\" \\\", \
+RowBox[{\\\"(\\\", RowBox[{RowBox[{RowBox[{\\\"-\\\", \\\"3\\\"}], \\\" \\\", \
+\\\"b\\\"}], \\\"+\\\", RowBox[{\\\"2\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"3\\\", \\\" \\\
+\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"3\\\", \\\" \\\", \\\"b\\\", \\\" \
+\\\", \\\"n\\\"}]}], \\\")\\\"}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 1, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, -
+       OnTheBinomialTheoremAndDiscreteConvolution`b ((-3) 
+         OnTheBinomialTheoremAndDiscreteConvolution`b + 
+        2 OnTheBinomialTheoremAndDiscreteConvolution`b^2 + 
+        3 OnTheBinomialTheoremAndDiscreteConvolution`n - 3 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n)],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"2\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{\\\"b\\\", \\\" \\\", RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{\\\"10\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"15\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"]}], \\\"+\\\", RowBox[{\\\"6\\\", \\\" \\\
+\", SuperscriptBox[\\\"b\\\", \\\"4\\\"]}], \\\"-\\\", RowBox[{\\\"15\\\", \\\
+\" \\\", \\\"b\\\", \\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"30\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", \\\"n\\\"}], \
+\\\"-\\\", RowBox[{\\\"15\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"3\\\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"5\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"15\\\", \\\" \
+\\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \
+\\\"+\\\", RowBox[{\\\"10\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}]}], \
+\\\")\\\"}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 2, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b (
+        10 OnTheBinomialTheoremAndDiscreteConvolution`b^2 - 15 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 + 
+        6 OnTheBinomialTheoremAndDiscreteConvolution`b^4 - 15 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        30 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 15 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        5 OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 15 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        10 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2)],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"3\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{RowBox[{\\\"-\\\", \\\"b\\\"}], \\\" \\\", \
+RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\"7\\\", \\\" \\\", \\\"b\\\"}], \\\"-\\\
+\", RowBox[{\\\"28\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"]}], \\\
+\"+\\\", RowBox[{\\\"70\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"4\\\"]}], \\\"-\\\", RowBox[{\\\"70\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"]}], \\\"+\\\", RowBox[{\\\"20\\\", \\\" \
+\\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"]}], \\\"-\\\", RowBox[{\\\"7\\\", \
+\\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"42\\\", \\\" \\\", \\\"b\\\", \
+\\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"175\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", \
+RowBox[{\\\"210\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\
+\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"70\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"14\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \
+\\\"+\\\", RowBox[{\\\"140\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"210\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\
+\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"84\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"35\\\", \\\" \
+\\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \
+\\\"+\\\", RowBox[{\\\"70\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"35\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}]}], \\\")\\\"}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 3, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, -
+       OnTheBinomialTheoremAndDiscreteConvolution`b (
+        7 OnTheBinomialTheoremAndDiscreteConvolution`b - 28 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 + 
+        70 OnTheBinomialTheoremAndDiscreteConvolution`b^4 - 70 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 + 
+        20 OnTheBinomialTheoremAndDiscreteConvolution`b^6 - 7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        42 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 175 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        210 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 70 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 14 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        140 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 210 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        84 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 35 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        70 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 35 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3)],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"4\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{\\\"b\\\", \\\" \\\", RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{RowBox[{\\\"-\\\", \\\"60\\\"}], \\\" \\\", \\\"b\\\"}], \
+\\\"+\\\", RowBox[{\\\"180\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"294\\\", \\\" \\\", SuperscriptBox[\\\"b\
+\\\", \\\"4\\\"]}], \\\"+\\\", RowBox[{\\\"420\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"6\\\"]}], \\\"-\\\", RowBox[{\\\"315\\\", \\\" \
+\\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"]}], \\\"+\\\", RowBox[{\\\"70\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"]}], \\\"+\\\", \
+RowBox[{\\\"60\\\", \\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"270\\\", \
+\\\" \\\", \\\"b\\\", \\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"735\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", \\\"n\\\"}], \
+\\\"-\\\", RowBox[{\\\"1470\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\
+\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"1260\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"315\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\
+\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"90\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"630\\\", \\\" \
+\\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\
+\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"1890\\\", \\\" \\\", SuperscriptBox[\
+\\\"b\\\", \\\"4\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \
+\\\"-\\\", RowBox[{\\\"1890\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\
+\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\
+\"540\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"210\\\", \\\" \
+\\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \
+\\\"-\\\", RowBox[{\\\"1050\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\
+\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", RowBox[{\\\
+\"1260\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", RowBox[{\\\"420\\\", \\\" \
+\\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\
+\", \\\"3\\\"]}], \\\"-\\\", RowBox[{\\\"21\\\", \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"4\\\"]}], \\\"+\\\", RowBox[{\\\"210\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"4\\\"]}], \\\"-\\\", RowBox[{\\\"315\\\", \\\" \\\", SuperscriptBox[\\\"b\\\
+\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"126\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\
+\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}]}], \\\")\\\"}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 4, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b ((-60) 
+         OnTheBinomialTheoremAndDiscreteConvolution`b + 
+        180 OnTheBinomialTheoremAndDiscreteConvolution`b^2 - 294 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 + 
+        420 OnTheBinomialTheoremAndDiscreteConvolution`b^6 - 315 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 + 
+        70 OnTheBinomialTheoremAndDiscreteConvolution`b^8 + 
+        60 OnTheBinomialTheoremAndDiscreteConvolution`n - 270 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        735 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 1470 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        1260 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 315 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        90 OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 630 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        1890 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 1890 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        540 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        210 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 1050 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        1260 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 420 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 21 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        210 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 315 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        126 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4)],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"5\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{RowBox[{\\\"-\\\", \\\"b\\\"}], \\\" \\\", \
+RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\"693\\\", \\\" \\\", \\\"b\\\"}], \\\"-\
+\\\", RowBox[{\\\"2068\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"330\\\", \\\" \\\", SuperscriptBox[\\\"b\
+\\\", \\\"3\\\"]}], \\\"+\\\", RowBox[{\\\"2640\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"4\\\"]}], \\\"-\\\", RowBox[{\\\"2772\\\", \\\" \
+\\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"2310\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"]}], \
+\\\"-\\\", RowBox[{\\\"1386\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\
+\"]}], \\\"+\\\", RowBox[{\\\"252\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"10\\\"]}], \\\"-\\\", RowBox[{\\\"693\\\", \\\" \\\", \\\"n\\\"}], \
+\\\"+\\\", RowBox[{\\\"3102\\\", \\\" \\\", \\\"b\\\", \\\" \\\", \
+\\\"n\\\"}], \\\"-\\\", RowBox[{\\\"660\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"6600\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \
+\\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"9702\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"10395\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \
+\\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"6930\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"1386\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\" \
+\\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"1034\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"330\\\", \\\" \
+\\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \
+\\\"+\\\", RowBox[{\\\"5940\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\
+\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", RowBox[{\\\
+\"12936\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"18480\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"13860\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"2\\\"]}], \\\"+\\\", RowBox[{\\\"3080\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"2\\\"]}], \\\"-\\\", RowBox[{\\\"2310\\\", \\\" \\\", \\\"b\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", RowBox[{\\\"8085\\\", \\\" \
+\\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\
+\", \\\"3\\\"]}], \\\"-\\\", RowBox[{\\\"16170\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"3\\\"]}], \\\"+\\\", RowBox[{\\\"13860\\\", \\\" \\\", SuperscriptBox[\\\"b\
+\\\", \\\"6\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \
+\\\"-\\\", RowBox[{\\\"3465\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\
+\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", RowBox[{\\\
+\"330\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"2310\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"6930\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"6930\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"1980\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", RowBox[{\\\"231\\\", \
+\\\" \\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \
+\\\"-\\\", RowBox[{\\\"1155\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\
+\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"+\\\", RowBox[{\\\
+\"1386\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\\\", RowBox[{\\\"462\\\", \\\" \
+\\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\
+\", \\\"5\\\"]}]}], \\\")\\\"}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 5, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, -
+       OnTheBinomialTheoremAndDiscreteConvolution`b (
+        693 OnTheBinomialTheoremAndDiscreteConvolution`b - 2068 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 + 
+        330 OnTheBinomialTheoremAndDiscreteConvolution`b^3 + 
+        2640 OnTheBinomialTheoremAndDiscreteConvolution`b^4 - 2772 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^6 + 
+        2310 OnTheBinomialTheoremAndDiscreteConvolution`b^8 - 1386 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 + 
+        252 OnTheBinomialTheoremAndDiscreteConvolution`b^10 - 693 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        3102 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 660 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 6600 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        9702 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 10395 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        6930 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 1386 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 1034 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        330 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        5940 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 12936 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        18480 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 13860 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        3080 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 2310 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        8085 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 16170 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        13860 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 3465 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        330 OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 2310 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        6930 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 6930 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        1980 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        231 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 1155 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        1386 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 462 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5)],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"6\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{\\\"b\\\", \\\" \\\", RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{RowBox[{\\\"-\\\", \\\"10920\\\"}], \\\" \\\", \\\"b\\\"}], \
+\\\"+\\\", RowBox[{\\\"33306\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"9009\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"]}], \\\"-\\\", RowBox[{\\\"36036\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"37752\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"]}], \
+\\\"-\\\", RowBox[{\\\"22022\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"8\\\"]}], \\\"+\\\", RowBox[{\\\"12012\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"10\\\"]}], \\\"-\\\", RowBox[{\\\"6006\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"11\\\"]}], \\\"+\\\", \
+RowBox[{\\\"924\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"]}], \
+\\\"+\\\", RowBox[{\\\"10920\\\", \\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\
+\\\"49959\\\", \\\" \\\", \\\"b\\\", \\\" \\\", \\\"n\\\"}], \\\"+\\\", \
+RowBox[{\\\"18018\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \
+\\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"90090\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"132132\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \
+\\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"99099\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"66066\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\" \
+\\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"36036\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"10\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"6006\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"11\\\"], \\\" \
+\\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"16653\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"9009\\\", \\\" \
+\\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \
+\\\"-\\\", RowBox[{\\\"84084\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"180180\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"180180\\\
+\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"150150\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"90090\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"16380\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"10\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \
+\\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"36036\\\", \\\" \\\", \\\"b\\\", \\\" \\\
+\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"120120\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", RowBox[{\\\"168168\\\
+\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", RowBox[{\\\"180180\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", RowBox[{\\\"120120\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", RowBox[{\\\"24024\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"3\\\"]}], \\\"-\\\", RowBox[{\\\"6006\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", RowBox[{\\\"40040\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"4\\\"]}], \\\"-\\\", RowBox[{\\\"84084\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"4\\\"]}], \\\"+\\\", RowBox[{\\\"120120\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"4\\\"]}], \\\"-\\\", RowBox[{\\\"90090\\\", \\\" \\\", SuperscriptBox[\\\"b\
+\\\", \\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \
+\\\"+\\\", RowBox[{\\\"20020\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"8\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"6006\\\", \\\" \\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\\\
+\", \\\"5\\\"]}], \\\"+\\\", RowBox[{\\\"21021\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"5\\\"]}], \\\"-\\\", RowBox[{\\\"42042\\\", \\\" \\\", SuperscriptBox[\\\"b\
+\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \
+\\\"+\\\", RowBox[{\\\"36036\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"6\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\\\", \
+RowBox[{\\\"9009\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"+\\\", RowBox[{\\\"286\\\", \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"-\\\", \
+RowBox[{\\\"2002\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"6006\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"-\\\", \
+RowBox[{\\\"6006\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"1716\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}]}], \\\")\\\"}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 6, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b ((-10920) 
+         OnTheBinomialTheoremAndDiscreteConvolution`b + 
+        33306 OnTheBinomialTheoremAndDiscreteConvolution`b^2 - 9009 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 - 36036 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 + 
+        37752 OnTheBinomialTheoremAndDiscreteConvolution`b^6 - 22022 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^8 + 
+        12012 OnTheBinomialTheoremAndDiscreteConvolution`b^10 - 6006 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^11 + 
+        924 OnTheBinomialTheoremAndDiscreteConvolution`b^12 + 
+        10920 OnTheBinomialTheoremAndDiscreteConvolution`n - 49959 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        18018 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        90090 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 132132 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        99099 OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 66066 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        36036 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 6006 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        16653 OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 9009 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 84084 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        180180 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 180180 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        150150 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 90090 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        16380 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        36036 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 120120 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        168168 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 180180 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        120120 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 24024 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 6006 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        40040 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 84084 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        120120 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 90090 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        20020 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 6006 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        21021 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 42042 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        36036 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 9009 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        286 OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 2002 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        6006 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 6006 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        1716 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^6)],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"7\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{RowBox[{\\\"-\\\", \\\"b\\\"}], \\\" \\\", \
+RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\"225027\\\", \\\" \\\", \\\"b\\\"}], \\\
+\"-\\\", RowBox[{\\\"699060\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\
+\"]}], \\\"+\\\", RowBox[{\\\"245700\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"]}], \\\"+\\\", RowBox[{\\\"652470\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"]}], \\\"+\\\", RowBox[{\\\"30030\
+\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"]}], \\\"-\\\", \
+RowBox[{\\\"744744\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"]}], \\\
+\"+\\\", RowBox[{\\\"408980\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\
+\"]}], \\\"-\\\", RowBox[{\\\"156156\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"10\\\"]}], \\\"+\\\", RowBox[{\\\"60060\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"]}], \\\"-\\\", \
+RowBox[{\\\"25740\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"13\\\"]}], \\\
+\"+\\\", RowBox[{\\\"3432\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"14\\\"]}], \\\"-\\\", RowBox[{\\\"225027\\\", \\\" \\\", \\\"n\\\"}], \
+\\\"+\\\", RowBox[{\\\"1048590\\\", \\\" \\\", \\\"b\\\", \\\" \\\", \
+\\\"n\\\"}], \\\"-\\\", RowBox[{\\\"491400\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"1631175\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \
+\\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"90090\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", \
+RowBox[{\\\"2606604\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \
+\\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"1840410\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", \
+RowBox[{\\\"858858\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\" \
+\\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"390390\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"11\\\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", \
+RowBox[{\\\"180180\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"], \
+\\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"25740\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"13\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"349530\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\
+\"+\\\", RowBox[{\\\"245700\\\", \\\" \\\", \\\"b\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"1577940\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"90090\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"2\\\"]}], \\\"-\\\", RowBox[{\\\"3603600\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"2\\\"]}], \\\"+\\\", RowBox[{\\\"3397680\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"2\\\"]}], \\\"-\\\", RowBox[{\\\"1981980\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"2\\\"]}], \\\"+\\\", RowBox[{\\\"1081080\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"10\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \
+\\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"540540\\\", \\\" \\\", SuperscriptBox[\\\
+\"b\\\", \\\"11\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \
+\\\"+\\\", RowBox[{\\\"83160\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\
+\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", RowBox[{\
+\\\"735735\\\", \\\" \\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"3\\\"]}], \\\"-\\\", RowBox[{\\\"30030\\\", \\\" \\\", SuperscriptBox[\\\"b\
+\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \
+\\\"+\\\", RowBox[{\\\"2492490\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"3\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"3303300\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"2477475\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"1651650\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"900900\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"150150\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"11\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"136500\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\
+\"-\\\", RowBox[{\\\"900900\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\
+\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", RowBox[{\\\
+\"1801800\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", RowBox[{\\\"1801800\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"4\\\"]}], \\\"+\\\", RowBox[{\\\"1501500\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"4\\\"]}], \\\"-\\\", RowBox[{\\\"900900\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"4\\\"]}], \\\"+\\\", RowBox[{\\\"163800\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"10\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \
+\\\"4\\\"]}], \\\"+\\\", RowBox[{\\\"162162\\\", \\\" \\\", \\\"b\\\", \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\\\", RowBox[{\\\"540540\\\
+\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"+\\\", RowBox[{\\\"756756\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\\\", RowBox[{\\\"810810\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"+\\\", RowBox[{\\\"540540\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\\\", RowBox[{\\\"108108\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\\\", RowBox[{\\\"12012\\\", \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"80080\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"-\\\", RowBox[{\\\"168168\\\
+\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", RowBox[{\\\"240240\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"-\\\", RowBox[{\\\"180180\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", RowBox[{\\\"40040\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"6\\\"]}], \\\"-\\\", RowBox[{\\\"4290\\\", \\\" \\\", \\\"b\\\", \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"+\\\", \
+RowBox[{\\\"15015\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"-\\\", \
+RowBox[{\\\"30030\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"+\\\", \
+RowBox[{\\\"25740\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"-\\\", \
+RowBox[{\\\"6435\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}]}], \\\")\\\"}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 7, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, -
+       OnTheBinomialTheoremAndDiscreteConvolution`b (
+        225027 OnTheBinomialTheoremAndDiscreteConvolution`b - 699060 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 + 
+        245700 OnTheBinomialTheoremAndDiscreteConvolution`b^3 + 
+        652470 OnTheBinomialTheoremAndDiscreteConvolution`b^4 + 
+        30030 OnTheBinomialTheoremAndDiscreteConvolution`b^5 - 744744 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^6 + 
+        408980 OnTheBinomialTheoremAndDiscreteConvolution`b^8 - 156156 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^10 + 
+        60060 OnTheBinomialTheoremAndDiscreteConvolution`b^12 - 25740 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^13 + 
+        3432 OnTheBinomialTheoremAndDiscreteConvolution`b^14 - 225027 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        1048590 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 491400 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 1631175 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 90090 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        2606604 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 1840410 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        858858 OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 390390 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        180180 OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 25740 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 349530 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        245700 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        1577940 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        90090 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 3603600 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        3397680 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 1981980 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        1081080 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 540540 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        83160 OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 735735 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 30030 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        2492490 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 3303300 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        2477475 OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 1651650 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        900900 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 150150 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        136500 OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 900900 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        1801800 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 1801800 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        1501500 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 900900 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        163800 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        162162 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 540540 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        756756 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 810810 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        540540 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 108108 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 12012 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        80080 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 168168 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        240240 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 180180 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        40040 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 4290 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 + 
+        15015 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 30030 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 + 
+        25740 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 6435 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7)],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"8\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{\\\"b\\\", \\\" \\\", RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{RowBox[{\\\"-\\\", \\\"5940480\\\"}], \\\" \\\", \\\"b\\\"}], \
+\\\"+\\\", RowBox[{\\\"18720400\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"7753020\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"]}], \\\"-\\\", RowBox[{\\\"15200244\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"1856400\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"]}], \
+\\\"+\\\", RowBox[{\\\"19492200\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"6\\\"]}], \\\"-\\\", RowBox[{\\\"10428990\\\", \\\" \\\", SuperscriptBox[\
+\\\"b\\\", \\\"8\\\"]}], \\\"+\\\", RowBox[{\\\"3792360\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"10\\\"]}], \\\"-\\\", RowBox[{\\\"1021020\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"]}], \\\"+\\\", \
+RowBox[{\\\"291720\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"14\\\"]}], \
+\\\"-\\\", RowBox[{\\\"109395\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"15\\\"]}], \\\"+\\\", RowBox[{\\\"12870\\\", \\\" \\\", SuperscriptBox[\\\
+\"b\\\", \\\"16\\\"]}], \\\"+\\\", RowBox[{\\\"5940480\\\", \\\" \\\", \
+\\\"n\\\"}], \\\"-\\\", RowBox[{\\\"28080600\\\", \\\" \\\", \\\"b\\\", \\\" \
+\\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"15506040\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", \
+RowBox[{\\\"38000610\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\
+\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"5569200\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"68222700\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\
+\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"46930455\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"20857980\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\
+\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"6636630\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"11\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"2187900\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"13\\\"], \\\
+\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"875160\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"14\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"109395\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"15\\\"], \
+\\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"9360200\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"7753020\\\", \
+\\\" \\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \
+\\\"-\\\", RowBox[{\\\"38153508\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"5569200\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"95140500\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"87603516\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"48668620\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"18582564\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"7147140\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"3063060\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"13\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"408408\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"14\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"19229652\\\", \\\" \\\", \\\"b\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", RowBox[{\\\"1856400\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"3\\\"]}], \\\"-\\\", RowBox[{\\\"67294500\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"3\\\"]}], \\\"+\\\", RowBox[{\\\"87603516\\\", \\\" \\\", SuperscriptBox[\\\
+\"b\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\
+\\\", RowBox[{\\\"62573940\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"29201172\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"13273260\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"11\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"6126120\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"875160\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"13\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"3876510\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \
+\\\"+\\\", RowBox[{\\\"25525500\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"50540490\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"48133800\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"28078050\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"15315300\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"7657650\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"11\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"1178100\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"5105100\\\", \\\" \\\", \\\"b\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"+\\\", RowBox[{\\\"16846830\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"5\\\"]}], \\\"-\\\", RowBox[{\\\"22462440\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"5\\\"]}], \\\"+\\\", RowBox[{\\\"16846830\\\", \\\" \\\", SuperscriptBox[\\\
+\"b\\\", \\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\
+\\\", RowBox[{\\\"11231220\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"9\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"+\\\", \
+RowBox[{\\\"6126120\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\\\", \
+RowBox[{\\\"1021020\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"11\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"+\\\", \
+RowBox[{\\\"464100\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\
+\"-\\\", RowBox[{\\\"3063060\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"6126120\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"-\\\", \
+RowBox[{\\\"6126120\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"5105100\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"-\\\", \
+RowBox[{\\\"3063060\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"556920\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"262548\\\", \\\" \\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\
+\\\", \\\"7\\\"]}], \\\"-\\\", RowBox[{\\\"875160\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"7\\\"]}], \\\"+\\\", RowBox[{\\\"1225224\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"7\\\"]}], \\\"-\\\", RowBox[{\\\"1312740\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"7\\\"]}], \\\"+\\\", RowBox[{\\\"875160\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"7\\\"]}], \\\"-\\\", RowBox[{\\\"175032\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"7\\\"]}], \\\"-\\\", RowBox[{\\\"7293\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"8\\\"]}], \\\"+\\\", RowBox[{\\\"48620\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"8\\\"]}], \\\"-\\\", RowBox[{\\\"102102\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"8\\\"]}], \\\"+\\\", RowBox[{\\\"145860\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"8\\\"]}], \\\"-\\\", RowBox[{\\\"109395\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"8\\\"]}], \\\"+\\\", RowBox[{\\\"24310\\\", \\\" \\\", SuperscriptBox[\\\"b\
+\\\", \\\"8\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"8\\\"]}]}], \
+\\\")\\\"}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 8, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b ((-5940480) 
+         OnTheBinomialTheoremAndDiscreteConvolution`b + 
+        18720400 OnTheBinomialTheoremAndDiscreteConvolution`b^2 - 7753020 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 - 15200244 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 - 1856400 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 + 
+        19492200 OnTheBinomialTheoremAndDiscreteConvolution`b^6 - 10428990 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^8 + 
+        3792360 OnTheBinomialTheoremAndDiscreteConvolution`b^10 - 1021020 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^12 + 
+        291720 OnTheBinomialTheoremAndDiscreteConvolution`b^14 - 109395 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^15 + 
+        12870 OnTheBinomialTheoremAndDiscreteConvolution`b^16 + 
+        5940480 OnTheBinomialTheoremAndDiscreteConvolution`n - 28080600 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        15506040 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        38000610 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        5569200 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 68222700 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        46930455 OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 20857980 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        6636630 OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 2187900 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        875160 OnTheBinomialTheoremAndDiscreteConvolution`b^14 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 109395 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^15 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        9360200 OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 7753020 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 38153508 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 5569200 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        95140500 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 87603516 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        48668620 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 18582564 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        7147140 OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 3063060 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        408408 OnTheBinomialTheoremAndDiscreteConvolution`b^14 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        19229652 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        1856400 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 67294500 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        87603516 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 62573940 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        29201172 OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 13273260 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        6126120 OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 875160 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 3876510 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        25525500 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 50540490 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        48133800 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 28078050 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        15315300 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 7657650 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        1178100 OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 5105100 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        16846830 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 22462440 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        16846830 OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 11231220 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        6126120 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 1021020 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        464100 OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 3063060 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        6126120 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 6126120 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        5105100 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 3063060 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        556920 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        262548 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 875160 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 + 
+        1225224 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 1312740 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 + 
+        875160 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 175032 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 7293 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^8 + 
+        48620 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^8 - 102102 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^8 + 
+        145860 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^8 - 109395 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^8 + 
+        24310 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^8)],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"9\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{RowBox[{\\\"-\\\", \\\"b\\\"}], \\\" \\\", \
+RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\"197394477\\\", \\\" \\\", \\\"b\\\"}], \
+\\\"-\\\", RowBox[{\\\"628945904\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\
+\"2\\\"]}], \\\"+\\\", RowBox[{\\\"290990700\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"]}], \\\"+\\\", RowBox[{\\\"449092740\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"98204920\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"]}], \
+\\\"-\\\", RowBox[{\\\"654031072\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\
+\"6\\\"]}], \\\"+\\\", RowBox[{\\\"4408950\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"7\\\"]}], \\\"+\\\", RowBox[{\\\"339279200\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"]}], \\\"-\\\", \
+RowBox[{\\\"122493228\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"10\\\"]}], \\\"+\\\", RowBox[{\\\"31408520\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"12\\\"]}], \\\"-\\\", RowBox[{\\\"6281704\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"14\\\"]}], \\\"+\\\", \
+RowBox[{\\\"1385670\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"16\\\"]}], \
+\\\"-\\\", RowBox[{\\\"461890\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"17\\\"]}], \\\"+\\\", RowBox[{\\\"48620\\\", \\\" \\\", SuperscriptBox[\\\
+\"b\\\", \\\"18\\\"]}], \\\"-\\\", RowBox[{\\\"197394477\\\", \\\" \\\", \
+\\\"n\\\"}], \\\"+\\\", RowBox[{\\\"943418856\\\", \\\" \\\", \\\"b\\\", \\\" \
+\\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"581981400\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"1122731850\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \
+\\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"294614760\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", \
+RowBox[{\\\"2289108752\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \
+\\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"17635800\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"1526756400\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"], \
+\\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"673712754\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"204155380\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"11\\\"], \
+\\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"47112780\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"13\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"11778195\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"15\\\"], \
+\\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"4157010\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"16\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"461890\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"17\\\"], \
+\\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"314472952\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"290990700\\\", \
+\\\" \\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \
+\\\"+\\\", RowBox[{\\\"1170364660\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"294614760\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"3208293108\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"26453700\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"2874635400\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"1585206480\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"576438720\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"155195040\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"44341440\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"14\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"16628040\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"15\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"1956240\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"16\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"632815140\\\", \\\" \\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"3\\\"]}], \\\"-\\\", RowBox[{\\\"98204920\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"3\\\"]}], \\\"+\\\", RowBox[{\\\"2297960890\\\", \\\" \\\", SuperscriptBox[\
+\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \
+\\\"-\\\", RowBox[{\\\"17635800\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"4\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"2936360700\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"2080583505\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"924703780\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"294223930\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"11\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"96996900\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"13\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"38798760\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"14\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"4849845\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"15\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"136089590\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \
+\\\"-\\\", RowBox[{\\\"896604072\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\
+\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"4408950\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"1763580000\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"1664466804\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"924703780\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"353068716\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"135795660\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"58198140\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"13\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"7759752\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"14\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"191499594\\\", \\\" \\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"5\\\"]}], \\\"-\\\", RowBox[{\\\"630479850\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"5\\\"]}], \\\"+\\\", RowBox[{\\\"832233402\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"5\\\"]}], \\\"-\\\", RowBox[{\\\"594452430\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"5\\\"]}], \\\"+\\\", RowBox[{\\\"277411134\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"5\\\"]}], \\\"-\\\", RowBox[{\\\"126095970\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"11\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \
+\\\"5\\\"]}], \\\"+\\\", RowBox[{\\\"58198140\\\", \\\" \\\", SuperscriptBox[\
+\\\"b\\\", \\\"12\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\
+\"-\\\", RowBox[{\\\"8314020\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"13\
+\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\\\", RowBox[{\
+\\\"19640984\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \
+\\\"+\\\", RowBox[{\\\"129329200\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\
+\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"-\\\", \
+RowBox[{\\\"256071816\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"243877920\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"-\\\", \
+RowBox[{\\\"142262120\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"77597520\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"-\\\", \
+RowBox[{\\\"38798760\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"11\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"5969040\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"-\\\", \
+RowBox[{\\\"13856700\\\", \\\" \\\", \\\"b\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"+\\\", RowBox[{\\\"45727110\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"7\\\"]}], \\\"-\\\", RowBox[{\\\"60969480\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"7\\\"]}], \\\"+\\\", RowBox[{\\\"45727110\\\", \\\" \\\", SuperscriptBox[\\\
+\"b\\\", \\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"-\
+\\\", RowBox[{\\\"30484740\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"9\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"+\\\", \
+RowBox[{\\\"16628040\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"-\\\", \
+RowBox[{\\\"2771340\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"11\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"+\\\", \
+RowBox[{\\\"629850\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"8\\\"]}], \\\
+\"-\\\", RowBox[{\\\"4157010\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"8\\\"]}], \\\"+\\\", \
+RowBox[{\\\"8314020\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"8\\\"]}], \\\"-\\\", \
+RowBox[{\\\"8314020\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"8\\\"]}], \\\"+\\\", \
+RowBox[{\\\"6928350\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"8\\\"]}], \\\"-\\\", \
+RowBox[{\\\"4157010\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"8\\\"]}], \\\"+\\\", \
+RowBox[{\\\"755820\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"8\\\"]}], \\\"+\\\", \
+RowBox[{\\\"138567\\\", \\\" \\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\
+\\\", \\\"9\\\"]}], \\\"-\\\", RowBox[{\\\"461890\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"9\\\"]}], \\\"+\\\", RowBox[{\\\"646646\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"9\\\"]}], \\\"-\\\", RowBox[{\\\"692835\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"9\\\"]}], \\\"+\\\", RowBox[{\\\"461890\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"9\\\"]}], \\\"-\\\", RowBox[{\\\"92378\\\", \\\" \\\", SuperscriptBox[\\\"b\
+\\\", \\\"9\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"9\\\"]}]}], \
+\\\")\\\"}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 9, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, -
+       OnTheBinomialTheoremAndDiscreteConvolution`b (
+        197394477 OnTheBinomialTheoremAndDiscreteConvolution`b - 628945904 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 + 
+        290990700 OnTheBinomialTheoremAndDiscreteConvolution`b^3 + 
+        449092740 OnTheBinomialTheoremAndDiscreteConvolution`b^4 + 
+        98204920 OnTheBinomialTheoremAndDiscreteConvolution`b^5 - 654031072 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^6 + 
+        4408950 OnTheBinomialTheoremAndDiscreteConvolution`b^7 + 
+        339279200 OnTheBinomialTheoremAndDiscreteConvolution`b^8 - 122493228 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^10 + 
+        31408520 OnTheBinomialTheoremAndDiscreteConvolution`b^12 - 6281704 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^14 + 
+        1385670 OnTheBinomialTheoremAndDiscreteConvolution`b^16 - 461890 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^17 + 
+        48620 OnTheBinomialTheoremAndDiscreteConvolution`b^18 - 197394477 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        943418856 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 581981400 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 1122731850 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 294614760 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        2289108752 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 17635800 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 1526756400 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        673712754 OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 204155380 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        47112780 OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 11778195 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^15 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        4157010 OnTheBinomialTheoremAndDiscreteConvolution`b^16 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 461890 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^17 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 314472952 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        290990700 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        1170364660 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        294614760 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 3208293108 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        26453700 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        2874635400 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 1585206480 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        576438720 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 155195040 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        44341440 OnTheBinomialTheoremAndDiscreteConvolution`b^14 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 16628040 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^15 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        1956240 OnTheBinomialTheoremAndDiscreteConvolution`b^16 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 632815140 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 98204920 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        2297960890 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 17635800 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 2936360700 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        2080583505 OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 924703780 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        294223930 OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 96996900 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        38798760 OnTheBinomialTheoremAndDiscreteConvolution`b^14 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 4849845 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^15 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        136089590 OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 896604072 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        4408950 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        1763580000 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 1664466804 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        924703780 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 353068716 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        135795660 OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 58198140 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        7759752 OnTheBinomialTheoremAndDiscreteConvolution`b^14 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+        191499594 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 630479850 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        832233402 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 594452430 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        277411134 OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 126095970 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+        58198140 OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 8314020 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 19640984 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        129329200 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 256071816 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        243877920 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 142262120 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        77597520 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 38798760 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+        5969040 OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 13856700 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 + 
+        45727110 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 60969480 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 + 
+        45727110 OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 30484740 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 + 
+        16628040 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 2771340 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 + 
+        629850 OnTheBinomialTheoremAndDiscreteConvolution`n^8 - 4157010 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^8 + 
+        8314020 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^8 - 8314020 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^8 + 
+        6928350 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^8 - 4157010 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^8 + 
+        755820 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^8 + 
+        138567 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^9 - 461890 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^9 + 
+        646646 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^9 - 692835 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^9 + 
+        461890 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^9 - 92378 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^9)],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"10\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{RowBox[{RowBox[{\\\"-\\\", \\\"8086276440\\\"}], \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"25984963158\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"3\\\"]}], \\\"-\\\", RowBox[{\\\"13001635647\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"16512395284\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"5\\\"]}], \\\"-\\\", RowBox[{\\\"5431826400\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"27303383800\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"7\\\"]}], \\\"-\\\", RowBox[{\\\"515575830\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"8\\\"]}], \\\"-\\\", \
+RowBox[{\\\"13630842896\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"9\\\"]}], \\\"+\\\", RowBox[{\\\"4936848280\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"11\\\"]}], \\\"-\\\", \
+RowBox[{\\\"1253199948\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"13\\\"]}], \\\"+\\\", RowBox[{\\\"238704752\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"15\\\"]}], \\\"-\\\", RowBox[{\\\"36858822\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"17\\\"]}], \\\"+\\\", \
+RowBox[{\\\"6466460\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"19\\\"]}], \
+\\\"-\\\", RowBox[{\\\"1939938\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"20\\\"]}], \\\"+\\\", RowBox[{\\\"184756\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"21\\\"]}], \\\"+\\\", \
+RowBox[{\\\"8086276440\\\", \\\" \\\", \\\"b\\\", \\\" \\\", \\\"n\\\"}], \
+\\\"-\\\", RowBox[{\\\"38977444737\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"26003271294\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", \\\"n\\\"}], \
+\\\"+\\\", RowBox[{\\\"41280988210\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"4\\\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"16295479200\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", \\\"n\\\"}], \
+\\\"-\\\", RowBox[{\\\"95561843300\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"6\\\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"2062303320\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", \\\"n\\\"}], \
+\\\"+\\\", RowBox[{\\\"61338793032\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"8\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"27152665540\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \\\" \\\", \\\"n\\\"}], \
+\\\"+\\\", RowBox[{\\\"8145799662\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"12\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"1790285640\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"14\\\"], \\\" \\\", \\\"n\\\"}], \
+\\\"+\\\", RowBox[{\\\"313299987\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\
+\"16\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"61431370\\\", \\\" \
+\\\", SuperscriptBox[\\\"b\\\", \\\"18\\\"], \\\" \\\", \\\"n\\\"}], \
+\\\"+\\\", RowBox[{\\\"19399380\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"19\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"1939938\\\", \\\" \
+\\\", SuperscriptBox[\\\"b\\\", \\\"20\\\"], \\\" \\\", \\\"n\\\"}], \
+\\\"+\\\", RowBox[{\\\"12992481579\\\", \\\" \\\", \\\"b\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"13001635647\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"44650543476\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"16295479200\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"134272062540\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"3093454980\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"116313907248\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"64308944700\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"23151220092\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"11\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"5936210280\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"13\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"1187242056\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"15\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"261891630\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"17\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"87297210\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"18\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"9189180\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"19\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", \
+RowBox[{\\\"25694827004\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"5431826400\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"96775548100\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"2062303320\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"120850974552\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"6\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"85745259600\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"37727914224\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"10\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"11432701280\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"12\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"2638315680\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"14\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"659578920\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"16\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"+\\\", \
+RowBox[{\\\"232792560\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"17\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"25865840\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"18\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"5812876454\\\", \\\" \\\", \\\"b\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"38366502020\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"515575830\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"74861610516\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"5\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"70613743200\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"7\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"38837558760\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"14122748640\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"11\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"3802278480\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"13\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"1086365280\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"15\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"407386980\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"16\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"+\\\", \
+RowBox[{\\\"47927880\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"17\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"4\\\"]}], \\\"-\\\", \
+RowBox[{\\\"8555126580\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"+\\\", \
+RowBox[{\\\"28150440318\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\\\", \
+RowBox[{\\\"37072215180\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"+\\\", \
+RowBox[{\\\"26215352163\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\\\", \
+RowBox[{\\\"11651267628\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"10\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"+\\\", \
+RowBox[{\\\"3707221518\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\\\", \
+RowBox[{\\\"1222160940\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"14\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"+\\\", \
+RowBox[{\\\"488864376\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"15\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"-\\\", \
+RowBox[{\\\"61108047\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"16\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"5\\\"]}], \\\"+\\\", \
+RowBox[{\\\"950569620\\\", \\\" \\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"6\\\"]}], \\\"-\\\", RowBox[{\\\"6255653404\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"6\\\"]}], \\\"+\\\", RowBox[{\\\"12357405060\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"6\\\"]}], \\\"-\\\", RowBox[{\\\"11651267628\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"6\\\"]}], \\\"+\\\", RowBox[{\\\"6472926460\\\", \\\" \\\", SuperscriptBox[\
+\\\"b\\\", \\\"9\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \
+\\\"-\\\", RowBox[{\\\"2471481012\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"11\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"950569620\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"13\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"-\\\", \
+RowBox[{\\\"407386980\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"14\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"54318264\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"15\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"6\\\"]}], \\\"+\\\", \
+RowBox[{\\\"765998376\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"-\\\", \
+RowBox[{\\\"2521919400\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"+\\\", \
+RowBox[{\\\"3328933608\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"-\\\", \
+RowBox[{\\\"2377809720\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"+\\\", \
+RowBox[{\\\"1109644536\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"-\\\", \
+RowBox[{\\\"504383880\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"+\\\", \
+RowBox[{\\\"232792560\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"13\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"-\\\", \
+RowBox[{\\\"33256080\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"14\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"7\\\"]}], \\\"-\\\", \
+RowBox[{\\\"44192214\\\", \\\" \\\", \\\"b\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"8\\\"]}], \\\"+\\\", RowBox[{\\\"290990700\\\", \
+\\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\
+\"n\\\", \\\"8\\\"]}], \\\"-\\\", RowBox[{\\\"576161586\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"8\\\"]}], \\\"+\\\", RowBox[{\\\"548725320\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"8\\\"]}], \\\"-\\\", RowBox[{\\\"320089770\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"9\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"8\\\"]}], \\\"+\\\", RowBox[{\\\"174594420\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"11\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \
+\\\"8\\\"]}], \\\"-\\\", RowBox[{\\\"87297210\\\", \\\" \\\", SuperscriptBox[\
+\\\"b\\\", \\\"12\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"8\\\"]}], \\\
+\"+\\\", RowBox[{\\\"13430340\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"13\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"8\\\"]}], \\\"-\\\", \
+RowBox[{\\\"16166150\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"9\\\"]}], \\\"+\\\", \
+RowBox[{\\\"53348295\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"9\\\"]}], \\\"-\\\", \
+RowBox[{\\\"71131060\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"9\\\"]}], \\\"+\\\", \
+RowBox[{\\\"53348295\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"8\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"9\\\"]}], \\\"-\\\", \
+RowBox[{\\\"35565530\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"9\\\"]}], \\\"+\\\", \
+RowBox[{\\\"19399380\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"11\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"9\\\"]}], \\\"-\\\", \
+RowBox[{\\\"3233230\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"12\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"9\\\"]}], \\\"+\\\", \
+RowBox[{\\\"293930\\\", \\\" \\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\
+\\\", \\\"10\\\"]}], \\\"-\\\", RowBox[{\\\"1939938\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\
+\"10\\\"]}], \\\"+\\\", RowBox[{\\\"3879876\\\", \\\" \\\", SuperscriptBox[\\\
+\"b\\\", \\\"5\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"10\\\"]}], \
+\\\"-\\\", RowBox[{\\\"3879876\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"7\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"10\\\"]}], \\\"+\\\", \
+RowBox[{\\\"3233230\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"9\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"10\\\"]}], \\\"-\\\", \
+RowBox[{\\\"1939938\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"10\\\"], \\\
+\" \\\", SuperscriptBox[\\\"n\\\", \\\"10\\\"]}], \\\"+\\\", \
+RowBox[{\\\"352716\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"11\\\"], \
+\\\" \\\", SuperscriptBox[\\\"n\\\", \\\"10\\\"]}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 10, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, (-8086276440) 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 + 
+       25984963158 OnTheBinomialTheoremAndDiscreteConvolution`b^3 - 
+       13001635647 OnTheBinomialTheoremAndDiscreteConvolution`b^4 - 
+       16512395284 OnTheBinomialTheoremAndDiscreteConvolution`b^5 - 
+       5431826400 OnTheBinomialTheoremAndDiscreteConvolution`b^6 + 
+       27303383800 OnTheBinomialTheoremAndDiscreteConvolution`b^7 - 515575830 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^8 - 13630842896 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^9 + 
+       4936848280 OnTheBinomialTheoremAndDiscreteConvolution`b^11 - 
+       1253199948 OnTheBinomialTheoremAndDiscreteConvolution`b^13 + 
+       238704752 OnTheBinomialTheoremAndDiscreteConvolution`b^15 - 36858822 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^17 + 
+       6466460 OnTheBinomialTheoremAndDiscreteConvolution`b^19 - 1939938 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^20 + 
+       184756 OnTheBinomialTheoremAndDiscreteConvolution`b^21 + 
+       8086276440 OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 38977444737 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+       OnTheBinomialTheoremAndDiscreteConvolution`n + 
+       26003271294 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+       41280988210 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+       16295479200 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 95561843300 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+       OnTheBinomialTheoremAndDiscreteConvolution`n + 
+       2062303320 OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+       61338793032 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 27152665540 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+       OnTheBinomialTheoremAndDiscreteConvolution`n + 
+       8145799662 OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 1790285640 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^14 
+       OnTheBinomialTheoremAndDiscreteConvolution`n + 
+       313299987 OnTheBinomialTheoremAndDiscreteConvolution`b^16 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 61431370 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^18 
+       OnTheBinomialTheoremAndDiscreteConvolution`n + 
+       19399380 OnTheBinomialTheoremAndDiscreteConvolution`b^19 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 1939938 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^20 
+       OnTheBinomialTheoremAndDiscreteConvolution`n + 
+       12992481579 OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 13001635647 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 44650543476 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 16295479200 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+       134272062540 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 3093454980 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 116313907248 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+       64308944700 OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 23151220092 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+       5936210280 OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 1187242056 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^15 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+       261891630 OnTheBinomialTheoremAndDiscreteConvolution`b^17 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 87297210 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^18 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+       9189180 OnTheBinomialTheoremAndDiscreteConvolution`b^19 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+       25694827004 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+       5431826400 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 96775548100 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+       2062303320 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+       120850974552 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 85745259600 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+       37727914224 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 11432701280 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+       2638315680 OnTheBinomialTheoremAndDiscreteConvolution`b^14 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 659578920 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^16 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+       232792560 OnTheBinomialTheoremAndDiscreteConvolution`b^17 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 25865840 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^18 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 5812876454 
+       OnTheBinomialTheoremAndDiscreteConvolution`b 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+       38366502020 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 515575830 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 74861610516 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+       70613743200 OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 38837558760 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+       14122748640 OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 3802278480 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+       1086365280 OnTheBinomialTheoremAndDiscreteConvolution`b^15 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 407386980 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^16 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^4 + 
+       47927880 OnTheBinomialTheoremAndDiscreteConvolution`b^17 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^4 - 8555126580 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+       28150440318 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 37072215180 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+       26215352163 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 11651267628 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+       3707221518 OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 1222160940 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^14 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+       488864376 OnTheBinomialTheoremAndDiscreteConvolution`b^15 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^5 - 61108047 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^16 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^5 + 
+       950569620 OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 6255653404 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+       12357405060 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 11651267628 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+       6472926460 OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 2471481012 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+       950569620 OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 - 407386980 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^14 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+       54318264 OnTheBinomialTheoremAndDiscreteConvolution`b^15 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^6 + 
+       765998376 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 2521919400 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^7 + 
+       3328933608 OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 2377809720 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^7 + 
+       1109644536 OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 504383880 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^7 + 
+       232792560 OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 33256080 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^14 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^7 - 44192214 
+       OnTheBinomialTheoremAndDiscreteConvolution`b 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^8 + 
+       290990700 OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^8 - 576161586 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^8 + 
+       548725320 OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^8 - 320089770 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^8 + 
+       174594420 OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^8 - 87297210 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^8 + 
+       13430340 OnTheBinomialTheoremAndDiscreteConvolution`b^13 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^8 - 16166150 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^9 + 
+       53348295 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^9 - 71131060 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^6 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^9 + 
+       53348295 OnTheBinomialTheoremAndDiscreteConvolution`b^8 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^9 - 35565530 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^9 + 
+       19399380 OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^9 - 3233230 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^12 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^9 + 
+       293930 OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^10 - 1939938 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^10 + 
+       3879876 OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^10 - 3879876 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^7 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^10 + 
+       3233230 OnTheBinomialTheoremAndDiscreteConvolution`b^9 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^10 - 1939938 
+       OnTheBinomialTheoremAndDiscreteConvolution`b^10 
+       OnTheBinomialTheoremAndDiscreteConvolution`n^10 + 
+       352716 OnTheBinomialTheoremAndDiscreteConvolution`b^11 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^10],
+      Editable->False]}
+   },
+   DefaultBaseStyle->"Column",
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Column"]], "Output",
+ CellChangeTimes->{{3.8518377441350737`*^9, 3.8518378063535514`*^9}, 
+   3.85183798512371*^9, 3.8518380357429233`*^9, 3.85183819242715*^9, 
+   3.8518382285643835`*^9, 3.851838431413108*^9, 3.851838698299944*^9, {
+   3.851838850974512*^9, 3.8518388543587666`*^9}, 3.8518388948122883`*^9, 
+   3.8518389941526117`*^9},
+ CellLabel->
+  "Out[394]=",ExpressionUUID->"1549c3ee-3c56-4172-bd43-15ec2bdfce2d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+  "\"\<C:\\\\Users\\\\pkolosov\\\\RiderProjects\\\\\
+OnTheBinomialTheoremAndDiscreteConvolution\\\\datasets\\\\polynomials_p.txt\>\
+\"", ",", " ", "listOfP"}], "]"}]], "Input",
+ CellChangeTimes->{{3.851838443624151*^9, 3.851838457597689*^9}, {
+  3.851838497852827*^9, 3.851838527528056*^9}, {3.8518387446726227`*^9, 
+  3.8518387467721252`*^9}},
+ CellLabel->
+  "In[390]:=",ExpressionUUID->"abd5ce50-4a18-4bec-99ba-5e8a413f5b70"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\pkolosov\\\\RiderProjects\\\\\
+OnTheBinomialTheoremAndDiscreteConvolution\\\\datasets\\\\polynomials_p.txt\"\
+\>"], "Output",
+ CellChangeTimes->{3.851838528842553*^9, 3.8518387471936784`*^9},
+ CellLabel->
+  "Out[390]=",ExpressionUUID->"f4558cc8-6c57-4048-932f-edb1d55cbf30"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Save", "[", 
+  RowBox[{"\"\<test.txt\>\"", ",", " ", "listOfP"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8518386116382165`*^9, 3.851838629803149*^9}, {
+  3.851838704319358*^9, 3.8518387081948175`*^9}},
+ CellLabel->
+  "In[388]:=",ExpressionUUID->"9c2e22fb-ceaa-4b3e-88a5-bffa77b55318"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["listOfP"], "Input",
+ CellChangeTimes->{{3.8518387286581507`*^9, 3.85183872972288*^9}},
+ CellLabel->
+  "In[389]:=",ExpressionUUID->"8eaf1b89-591f-4d8d-93bf-2ae7bbc143e7"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"0\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{\\\"b\\\"}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 0, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"1\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{RowBox[{\\\"-\\\", \\\"b\\\"}], \\\" \\\", \
+RowBox[{\\\"(\\\", RowBox[{RowBox[{RowBox[{\\\"-\\\", \\\"3\\\"}], \\\" \\\", \
+\\\"b\\\"}], \\\"+\\\", RowBox[{\\\"2\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"3\\\", \\\" \\\
+\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"3\\\", \\\" \\\", \\\"b\\\", \\\" \
+\\\", \\\"n\\\"}]}], \\\")\\\"}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 1, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, -
+       OnTheBinomialTheoremAndDiscreteConvolution`b ((-3) 
+         OnTheBinomialTheoremAndDiscreteConvolution`b + 
+        2 OnTheBinomialTheoremAndDiscreteConvolution`b^2 + 
+        3 OnTheBinomialTheoremAndDiscreteConvolution`n - 3 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n)],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"2\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{\\\"b\\\", \\\" \\\", RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{\\\"10\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"15\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"]}], \\\"+\\\", RowBox[{\\\"6\\\", \\\" \\\
+\", SuperscriptBox[\\\"b\\\", \\\"4\\\"]}], \\\"-\\\", RowBox[{\\\"15\\\", \\\
+\" \\\", \\\"b\\\", \\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"30\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"], \\\" \\\", \\\"n\\\"}], \
+\\\"-\\\", RowBox[{\\\"15\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"3\\\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"5\\\", \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"15\\\", \\\" \
+\\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \
+\\\"+\\\", RowBox[{\\\"10\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}]}], \
+\\\")\\\"}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 2, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b (
+        10 OnTheBinomialTheoremAndDiscreteConvolution`b^2 - 15 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 + 
+        6 OnTheBinomialTheoremAndDiscreteConvolution`b^4 - 15 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        30 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 15 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        5 OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 15 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        10 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2)],
+      Editable->False]},
+    {
+     InterpretationBox["\<\"P(\\!\\(\\*RowBox[{\\\"3\\\"}]\\), \
+\\!\\(\\*RowBox[{\\\"n\\\"}]\\), \\!\\(\\*RowBox[{\\\"b\\\"}]\\)) is: \
+\\!\\(\\*RowBox[{RowBox[{\\\"-\\\", \\\"b\\\"}], \\\" \\\", \
+RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\"7\\\", \\\" \\\", \\\"b\\\"}], \\\"-\\\
+\", RowBox[{\\\"28\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"2\\\"]}], \\\
+\"+\\\", RowBox[{\\\"70\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"4\\\"]}], \\\"-\\\", RowBox[{\\\"70\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"]}], \\\"+\\\", RowBox[{\\\"20\\\", \\\" \
+\\\", SuperscriptBox[\\\"b\\\", \\\"6\\\"]}], \\\"-\\\", RowBox[{\\\"7\\\", \
+\\\" \\\", \\\"n\\\"}], \\\"+\\\", RowBox[{\\\"42\\\", \\\" \\\", \\\"b\\\", \
+\\\" \\\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"175\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\", \\\"n\\\"}], \\\"+\\\", \
+RowBox[{\\\"210\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\
+\", \\\"n\\\"}], \\\"-\\\", RowBox[{\\\"70\\\", \\\" \\\", \
+SuperscriptBox[\\\"b\\\", \\\"5\\\"], \\\" \\\", \\\"n\\\"}], \\\"-\\\", \
+RowBox[{\\\"14\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \
+\\\"+\\\", RowBox[{\\\"140\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", \
+RowBox[{\\\"210\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \\\
+\", SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"+\\\", RowBox[{\\\"84\\\", \\\
+\" \\\", SuperscriptBox[\\\"b\\\", \\\"4\\\"], \\\" \\\", \
+SuperscriptBox[\\\"n\\\", \\\"2\\\"]}], \\\"-\\\", RowBox[{\\\"35\\\", \\\" \
+\\\", \\\"b\\\", \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \
+\\\"+\\\", RowBox[{\\\"70\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \
+\\\"2\\\"], \\\" \\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}], \\\"-\\\", \
+RowBox[{\\\"35\\\", \\\" \\\", SuperscriptBox[\\\"b\\\", \\\"3\\\"], \\\" \
+\\\", SuperscriptBox[\\\"n\\\", \\\"3\\\"]}]}], \\\")\\\"}]}]\\)\"\>",
+      StringForm[
+      "P(`1`, `2`, `3`) is: `4`", 3, 
+       OnTheBinomialTheoremAndDiscreteConvolution`n, 
+       OnTheBinomialTheoremAndDiscreteConvolution`b, -
+       OnTheBinomialTheoremAndDiscreteConvolution`b (
+        7 OnTheBinomialTheoremAndDiscreteConvolution`b - 28 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^2 + 
+        70 OnTheBinomialTheoremAndDiscreteConvolution`b^4 - 70 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 + 
+        20 OnTheBinomialTheoremAndDiscreteConvolution`b^6 - 7 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        42 OnTheBinomialTheoremAndDiscreteConvolution`b 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 175 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n + 
+        210 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n - 70 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^5 
+        OnTheBinomialTheoremAndDiscreteConvolution`n - 14 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        140 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 210 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^2 + 
+        84 OnTheBinomialTheoremAndDiscreteConvolution`b^4 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^2 - 35 
+        OnTheBinomialTheoremAndDiscreteConvolution`b 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3 + 
+        70 OnTheBinomialTheoremAndDiscreteConvolution`b^2 
+         OnTheBinomialTheoremAndDiscreteConvolution`n^3 - 35 
+        OnTheBinomialTheoremAndDiscreteConvolution`b^3 
+        OnTheBinomialTheoremAndDiscreteConvolution`n^3)],
+      Editable->False]}
+   },
+   DefaultBaseStyle->"Column",
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Column"]], "Output",
+ CellChangeTimes->{3.851838730137837*^9},
+ CellLabel->
+  "Out[389]=",ExpressionUUID->"cab8b3d1-4809-4d3d-8ebc-171b7f75087c"]
 }, Open  ]]
 },
-WindowSize->{1280, 741},
-WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
+WindowSize->{1269., 735.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"3c3c386d-8a23-4ba2-bc00-cb6053bc008d"
@@ -2735,7 +4759,7 @@ Cell[19801, 642, 491, 11, 28, "Message",ExpressionUUID->"aa97c8fb-8f4e-4eac-a59f
 Cell[20295, 655, 491, 11, 28, "Message",ExpressionUUID->"b558c046-ed1e-4f38-95d6-a4058fd0f45d"],
 Cell[20789, 668, 491, 11, 28, "Message",ExpressionUUID->"f8dacd10-c535-4cb3-a0e0-02f4251672c7"],
 Cell[21283, 681, 457, 10, 28, "Message",ExpressionUUID->"8695ce35-b68e-428d-a349-de7ca940facc"],
-Cell[21743, 693, 497, 13, 54, "Output",ExpressionUUID->"f1327834-a649-45d7-8d9f-bbbce27eec0c"]
+Cell[21743, 693, 497, 13, 32, "Output",ExpressionUUID->"f1327834-a649-45d7-8d9f-bbbce27eec0c"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[22277, 711, 260, 5, 28, "Input",ExpressionUUID->"9a7d44d6-ee2c-4f36-9a9f-efd54faa089c"],
@@ -2890,7 +4914,7 @@ Cell[65794, 2030, 1318, 42, 151, "Output",ExpressionUUID->"5eb712fd-00ac-4260-9a
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[67149, 2077, 294, 6, 28, "Input",ExpressionUUID->"b1acb64c-b564-4b6f-b49e-17e50650ec20"],
-Cell[67446, 2085, 604, 20, 70, "Output",ExpressionUUID->"4e449cbc-db6d-4ecf-8caa-00b7a50bda39"]
+Cell[67446, 2085, 604, 20, 48, "Output",ExpressionUUID->"4e449cbc-db6d-4ecf-8caa-00b7a50bda39"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[68087, 2110, 381, 8, 28, "Input",ExpressionUUID->"e50fcbd5-c97e-47d4-8933-0fa69ff2792e"],
@@ -2935,6 +4959,19 @@ Cell[80832, 2474, 1778, 54, 202, "Output",ExpressionUUID->"b2c41b59-5d2a-4d40-ab
 Cell[CellGroupData[{
 Cell[82647, 2533, 333, 6, 28, "Input",ExpressionUUID->"5f07562f-4cb9-45ff-8e61-fdeb967f0e29"],
 Cell[82983, 2541, 3281, 94, 57, "Output",ExpressionUUID->"e158871a-d18a-4a87-83d9-b6d4f487cd75"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[86301, 2640, 609, 10, 28, "Input",ExpressionUUID->"a1849d11-4299-4bbd-8b64-96a3f478e26b"],
+Cell[86913, 2652, 119542, 1830, 1115, "Output",ExpressionUUID->"1549c3ee-3c56-4172-bd43-15ec2bdfce2d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[206492, 4487, 477, 10, 28, "Input",ExpressionUUID->"abd5ce50-4a18-4bec-99ba-5e8a413f5b70"],
+Cell[206972, 4499, 307, 5, 32, "Output",ExpressionUUID->"f4558cc8-6c57-4048-932f-edb1d55cbf30"]
+}, Open  ]],
+Cell[207294, 4507, 308, 6, 28, "Input",ExpressionUUID->"9c2e22fb-ceaa-4b3e-88a5-bffa77b55318"],
+Cell[CellGroupData[{
+Cell[207627, 4517, 183, 3, 28, "Input",ExpressionUUID->"8eaf1b89-591f-4d8d-93bf-2ae7bbc143e7"],
+Cell[207813, 4522, 7789, 137, 97, "Output",ExpressionUUID->"cab8b3d1-4809-4d3d-8ebc-171b7f75087c"]
 }, Open  ]]
 }
 ]
