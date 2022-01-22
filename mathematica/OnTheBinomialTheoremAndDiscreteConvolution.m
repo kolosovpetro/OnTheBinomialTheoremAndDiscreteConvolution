@@ -143,8 +143,8 @@ PolynomialIdentityInvolvingH[m_, n_, b_] :=
     Sum[Sum[(-1) ^ (2 m - r) * PolynomialH[m, r, l] * b^l * n^r, {l, 
         1, 2 m - r + 1}], {r, 0, m}];
 
-PolynomialR::usage = "Polynomial sum_{j=0}^{r} frac{1}{(-1)^j} binom{r}{j} sum_{k=0}^{b-1} k^{2r-j}."
-PolynomialR[r_, b_] := Sum[1 / (-1) ^ j * Binomial[r, j] * OrdinaryPowerSumS[2 r - j, b], {j, 0, r}];
+PolynomialT::usage = "Polynomial sum_{j=0}^{r} frac{1}{(-1)^j} binom{r}{j} sum_{k=0}^{b-1} k^{2r-j}."
+PolynomialT[r_, b_] := Sum[1 / (-1) ^ j * Binomial[r, j] * OrdinaryPowerSumS[2 r - j, b], {j, 0, r}];
 
 Begin["`Private`"]
 
