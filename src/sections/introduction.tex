@@ -44,9 +44,23 @@ see Corollaries~\ref{cor_mult_exp_and_macaulay_conv},~\ref{cor_mult_exp_and_maca
     -1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell},
     \quad n > 0.\\
 \end{gather*}
-A few polynomial identities are straightforward as well,
-Theorems~\ref{thm_odd_power_by_macaulays_convolution},~\ref{thm_odd_power_by_macaulays_convolution_strict}
-\begin{gather*}
-    x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{x-1} k^r (x-k)^r,\\
-    x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=1}^{x} k^r (x-k)^r.\\
-\end{gather*}
+A few polynomial identities are straightforward as well by means of
+Theorems~\ref{thm_odd_power_by_macaulays_convolution},~\ref{thm_odd_power_by_macaulays_convolution_strict}.
+Precisely, by the theorem~\ref{thm_odd_power_by_macaulays_convolution} we have an odd-power identity as follows
+\begin{equation*}
+    x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{x-1} k^r (x-k)^r
+\end{equation*}
+From the other prospective, the theorem~\ref{thm_odd_power_by_macaulays_convolution_strict} concludes as follows
+\begin{equation*}
+    x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=1}^{x} k^r (x-k)^r
+\end{equation*}
+In its explicit form an identity $x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{x-1} k^r (x-k)^r$ looks like
+as follows
+\begin{align*}
+    x^3 &= \sum_{k=1}^{x} 6k (x-k) + 1 \\
+    x^5 &= \sum_{k=1}^{x} 30k^2 (x-k)^2 + 1 \\
+    x^7 &= \sum_{k=1}^{x} 140 k^3 (x-k)^3 - 14k(x-k) + 1 \\
+    x^9 &= \sum_{k=1}^{x} 630 k^4(x-k)^4 - 120k(x-k) + 1 \\
+    x^{11} &= \sum_{k=1}^{x} 2772 k^5 (x-k)^5 + 660 k^2(x-k)^2 - 1386k(x-k) + 1 \\
+    x^{13} &= \sum_{k=1}^{x} 51480 k^7 (x-k)^7 - 60060 k^3 (x-k)^3 + 491400 k^2 (x-k)^{2} - 450054 k (x-k) + 1 \\
+\end{align*}
