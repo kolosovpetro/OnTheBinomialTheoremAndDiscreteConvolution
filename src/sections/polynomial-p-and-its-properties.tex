@@ -98,13 +98,10 @@ By the binomial theorem $(x-y)^n = \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} x^k y^
         &=\sum_{r=0}^{m} x^{r} \coeffA{m}{r} \sum_{j=0}^{r} (-1)^{r-j} \binom{r}{j} \sum_{k=0}^{b-1} k^{2r-j} \\
         &=\sum_{r=0}^{m} (-1)^{r} x^{r} \coeffA{m}{r}
         \left[ \sum_{j=0}^{r} \frac{1}{(-1)^j} \binom{r}{j} \sum_{k=0}^{b-1} k^{2r-j} \right] \\
+        &=\sum_{r=0}^{m} (-1)^{r} x^{r} \coeffA{m}{r} \polynomialT{r}{b-1}, \\
     \end{split}
 \end{equation*}
-Given the power sum $S_{r} (b) = \sum_{k=0}^{b} k^{r}$ we get
-\begin{equation*}
-    \polynomialP{m}{b}{x}
-    = \sum_{r=0}^{m} (-1)^{r} x^{r} \coeffA{m}{r} \sum_{j=0}^{r} \frac{1}{(-1)^j} \binom{r}{j} S_{2r-j} (b-1)
-\end{equation*}
+where $\polynomialT{r}{b}$ is defined by~\eqref{eq:def_polynomial_t}.
 However, by the symmetry~\eqref{ppty_symmetry_of_polynomial_l} of $\polynomialL{m}{x}{k}$ the polynomial
 $\polynomialP{m}{b}{x}$ may also be written in the form
 \begin{equation*}

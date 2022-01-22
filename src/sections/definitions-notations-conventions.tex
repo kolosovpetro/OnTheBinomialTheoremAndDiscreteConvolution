@@ -41,6 +41,12 @@ We now set the following notation, which remains fixed for the remainder of this
         \polynomialL{m}{x}{k} \colonequals \sum_{r=0}^{m} \coeffA{m}{r} k^r(x-k)^r
     \end{equation}
 
+    \item $\polynomialT{r}{b}, \; r \in \mathbb{N}, \; b \in \mathbb{R}$ is polynomial defined as follows
+    \begin{equation}
+        \label{eq:def_polynomial_t}
+        \polynomialT{r}{b} \colonequals \sum_{j=0}^{r} \frac{1}{(-1)^j} \binom{r}{j} \sum_{k=0}^{b} k^{2r-j}
+    \end{equation}
+
     \item $(f\ast f)[n]$ is discrete convolution~\cite{DiscConv} of function $f$ defined over set of integers $\mathbb{Z}$
     \[
         (f\ast f)[n] = \sum_{k} f(k) f(n-k)
