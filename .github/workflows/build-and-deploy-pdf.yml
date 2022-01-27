@@ -28,7 +28,7 @@ jobs:
       - name: Clone repository and add document
         run: |
           git clone https://${{ secrets.GH_ACCESS_TOKEN }}@github.com/kolosovpetro/kolosovpetro.github.io.git ~/kolosovpetro.github.io
-          cp out/OnTheBinomialTheoremAndDiscreteConvolution.pdf  ~/kolosovpetro.github.io/pdf/GithubLatexTemplate.pdf
+          cp out/OnTheBinomialTheoremAndDiscreteConvolution.pdf  ~/kolosovpetro.github.io/pdf/OnTheBinomialTheoremAndDiscreteConvolution.pdf
       - name: Commit document changes if any
         run: |
           cd ~/kolosovpetro.github.io
