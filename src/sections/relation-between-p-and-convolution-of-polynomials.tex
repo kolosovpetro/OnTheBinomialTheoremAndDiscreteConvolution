@@ -29,6 +29,15 @@ where $[a \leq k \leq x-a]$ is Iverson's bracket~\cite{APL}.
         \convPower{n}{r}{x} = \sum_{k=0}^{x} k^r (x-k)^r, \quad n\geq 0.
     \]
 \end{lem}
+It is of first importance to keep in mind that  $n^r$ of discrete convolution $\convPower{n}{r}{x}$ evaluated at $x$
+is implicit piecewise-defined polynomial such as
+\begin{equation*}
+    n^{r} =
+    \begin{cases}
+        \underbrace{n \cdot n \cdots n}_{\mathrm{r \; times}}, & \mbox{if } n \geq 0 \\
+        0, & \mbox{otherwise}
+    \end{cases}
+\end{equation*}
 Thus, the corollary follows
 \begin{cor}
     \label{cor_polynomial_p_and_macaulay_convolution}
@@ -44,7 +53,7 @@ Therefore, another polynomial identity follows
     By Lemma~\ref{lemma_polynomial_p_and_odd_power}, Corollary~\ref{cor_polynomial_p_and_macaulay_convolution}
     and property~\ref{prop_p_identity}, for every $m\in\mathbb{N}, \; x\in\mathbb{R}$
     \begin{equation*}
-        x^{2m+1} = -1 + \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 0.
+        1 + x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 0.
     \end{equation*}
 \end{thm}
 Now we notice the following identity in terms of polynomial $\polynomialP{m}{b}{x}$ and
@@ -79,7 +88,7 @@ discrete convolution $\convPower{n}{j}{x}$ holds
     Proposition~\ref{prop_polynomial_p_and_macaulay_convolution_strict},
     for every $m\in\mathbb{N}, \; x\in\mathbb{R}$
     \begin{equation*}
-        x^{2m+1} = 1 + \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 1.
+        -1 + x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n > 0.
     \end{equation*}
 \end{thm}
 \begin{cor}
@@ -89,5 +98,5 @@ discrete convolution $\convPower{n}{j}{x}$ holds
         \sum_{r=0}^{m} \coeffA{m}{r} = 2^{2m+1} - 1
     \end{equation*}
 \end{cor}
-Corollary~\ref{cor_sum_of_coeffs_a} holds since that convolution $\convPower{n}{j}{x}=1, \; n\geq 1$
-for each $r$ when $x=2$.
+Corollary~\ref{cor_sum_of_coeffs_a} holds since that convolution $\convPower{n}{j}{x}=1, \; n > 0$
+for each $r$ and $x=2$.

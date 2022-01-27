@@ -5,7 +5,7 @@
     \begin{equation*}
         \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x+y}
         =
-        1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n\geq 1.
+        1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n\geq 0.
     \end{equation*}
 \end{cor}
 For example, given $m=0,1,2$ the Corollary~\ref{cor_bin_exp_and_macaulay_conv} gives
@@ -15,7 +15,7 @@ For example, given $m=0,1,2$ the Corollary~\ref{cor_bin_exp_and_macaulay_conv} g
         &= 1 + x + y \\
         \sum_{r=0}^{1} \coeffA{1}{r} \convPower{n}{r}{x+y}
         &= 1 + x + y - (x + y) (1 + x + y) (1 - 3 x - 3 y + 2 (x + y)) \\
-        &= x^3 + 3 x^2 y + 3 x y^2 + y^3 + 1\\
+        &= 1 + x^3 + 3 x^2 y + 3 x y^2 + y^3\\
         \sum_{r=0}^{2} \coeffA{2}{r} \convPower{n}{r}{x+y}
         &=1 + x + y + (x + y) (1 + x + y) \left(-1 + x + 5 x^2 + y + 10 x y + 5 y^2\right. \\
         &-15 x (x + y) + 10 x^2 (x + y) - 15 y (x + y) + 20 x y (x + y) \\
@@ -24,7 +24,15 @@ For example, given $m=0,1,2$ the Corollary~\ref{cor_bin_exp_and_macaulay_conv} g
         &=x^5 + 5 x^4 y + 10 x^3 y^2 + 10 x^2 y^3 + 5 x y^4 + y^5 + 1
     \end{split}
 \end{equation*}
-To get above examples use \texttt{ConvPowerIdentity[m, x + y]} command in Mathematica console~\cite{mmca_package}.
+Above example could be verified using using the commands
+\begin{itemize}
+    \item \texttt{BinomialTheoremAndDiscreteConvolutionTest[0, x + y]}
+    \item \texttt{BinomialTheoremAndDiscreteConvolutionTest[1, x + y]}
+    \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionTest[1, x + y]]}
+    \item \texttt{BinomialTheoremAndDiscreteConvolutionTest[2, x + y]}
+    \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionTest[2, x + y]]}
+\end{itemize}
+defined in Mathematica package at~\cite{PK22Source}.
 \begin{cor}
     \label{cor_bin_exp_and_macaulay_conv_strict}
     (Generalization of Theorem~\ref{thm_odd_power_by_macaulays_convolution_strict} for Binomials.)
@@ -32,7 +40,7 @@ To get above examples use \texttt{ConvPowerIdentity[m, x + y]} command in Mathem
     \begin{equation*}
         \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x+y}
         =
-        -1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n\geq 0.
+        -1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n > 0.
     \end{equation*}
 \end{cor}
 For example, given $m=0,1$ the Corollary~\ref{cor_bin_exp_and_macaulay_conv_strict} gives
@@ -45,8 +53,14 @@ For example, given $m=0,1$ the Corollary~\ref{cor_bin_exp_and_macaulay_conv_stri
         &= x^3 + 3 x^2 y + 3 x y^2 + y^3 - 1
     \end{split}
 \end{equation*}
-To get above examples use \texttt{ConvPowerIdentityStrict[m, x + y]} command in Mathematica console~\cite{mmca_package}.
-From other prospective, let be a function $f_r(t,k) = (t-k)^r, \; t \geq k$, then following identity holds
+Above example could be verified using using the commands
+\begin{itemize}
+    \item \texttt{BinomialTheoremAndDiscreteConvolutionStrictTest[0, x + y]}
+    \item \texttt{BinomialTheoremAndDiscreteConvolutionStrictTest[1, x + y]}
+    \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionStrictTest[1, x + y]]}
+\end{itemize}
+defined in Mathematica package at~\cite{PK22Source}.
+From the other prospective, let be a function $f_r(t,k) = (t-k)^r, \; t \geq k$, then following identity holds
 \begin{equation}
 (x-2a)
     ^{2m+1} + 1 =\sum_{r=0}^{m} \coeffA{m}{r} (f_r(t,k) \ast f_r(t,k))[x]
@@ -77,11 +91,15 @@ For instance, given $m=1$ the Corollary~\ref{cor_mult_exp_and_macaulay_conv} giv
     \begin{split}
         &\sum_{r=0}^{1} \coeffA{1}{r} \convPower{n}{r}{x+y+z} \\
         &=1 + x + y + z - (x + y + z) (1 + x + y + z) (1 - 3 x - 3 y - 3 z + 2 (x + y + z)) \\
-        &=1 + x^3 + 3 x^2 y + 3 x y^2 + y^3 + 3 x^2 z + 6 x y z + 3 y^2 z + 3 x z^2 + 3 y z^2 + z^3,
+        &=1 + x^3 + 3 x^2 y + 3 x y^2 + y^3 + 3 x^2 z + 6 x y z + 3 y^2 z + 3 x z^2 + 3 y z^2 + z^3.
     \end{split}
 \end{equation*}
-it might be verified using  \texttt{ConvPowerIdentity[m, x + y + z]}
-command in Mathematica console~\cite{mmca_package}.
+Above example could be verified using using the commands
+\begin{itemize}
+    \item \texttt{BinomialTheoremAndDiscreteConvolutionTest[1, x + y + z]}
+    \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionTest[1, x + y + z]]}
+\end{itemize}
+defined in Mathematica package at~\cite{PK22Source}.
 \begin{cor}
     \label{cor_mult_exp_and_macaulay_conv_strict}
     (Generalization of Theorem~\ref{thm_odd_power_by_macaulays_convolution_strict} for Multinomials.)
@@ -95,9 +113,13 @@ For example, given $m=1$ the Corollary~\ref{cor_mult_exp_and_macaulay_conv_stric
 \begin{equation*}
     \begin{split}
         &\sum_{r=0}^{1} \coeffA{1}{r} \convPower{n}{r}{x+y+z} \\
-        &=x + y + z -1 - (x + y + z -1) (x + y + z) (2 (x + y + z) - 1 - 3 x - 3 y - 3 z) \\
-        &=x^3 + 3 x^2 y + 3 x y^2 + y^3 + 3 x^2 z + 6 x y z + 3 y^2 z + 3 x z^2 + 3 y z^2 + z^3-1,
+        &=-1 + x + y + z - (-1 + x + y + z) (x + y + z) (-1 - 3 x - 3 y - 3 z + 2 (x + y + z)) \\
+        &=-1 + x^3 + 3 x^2 y + 3 x y^2 + y^3 + 3 x^2 z + 6 x y z + 3 y^2 z + 3 x z^2 + 3 y z^2 + z^3.
     \end{split}
 \end{equation*}
-it might be verified using \texttt{ConvPowerIdentityStrict[m, x + y + z]}
-command in Mathematica console~\cite{mmca_package}.
+Above example could be verified using using the commands
+\begin{itemize}
+    \item \texttt{BinomialTheoremAndDiscreteConvolutionStrictTest[1, x + y + z]}
+    \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionStrictTest[1, x + y + z]]}
+\end{itemize}
+defined in Mathematica package at~\cite{PK22Source}.
