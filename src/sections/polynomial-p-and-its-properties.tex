@@ -81,7 +81,8 @@ Next we discuss the polynomial $\polynomialP{m}{b}{x}$.
 In its extended form, the polynomial $\polynomialP{m}{b}{x}$ is
 \begin{equation*}
     \begin{split}
-        \polynomialP{m}{b}{x} =\sum_{k=0}^{b-1} \sum_{r=0}^{m} \coeffA{m}{r} k^r(x-k)^r
+        \polynomialP{m}{b}{x} = \sum_{k=0}^{b-1} \polynomialL{m}{x}{k}
+        =\sum_{k=0}^{b-1} \sum_{r=0}^{m} \coeffA{m}{r} k^r(x-k)^r
         =\sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{b-1} k^r(x-k)^r \\
 %        &=\sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{b-1} k^r \sum_{j=0}^{r} (-1)^{r-j} \binom{r}{j} x^{r} k^{r-j} \\
 %        &=\sum_{r=0}^{m} \sum_{j=0}^{r} (-1)^{r-j} x^{r} \binom{r}{j} \coeffA{m}{r} \sum_{k=0}^{b-1} k^{2r-j} \\
@@ -89,19 +90,15 @@ In its extended form, the polynomial $\polynomialP{m}{b}{x}$ is
 %        \binom{r+j+1}{s} \bernoulli{s} (b-1)^{r+j-s+1}
     \end{split}
 \end{equation*}
-By the binomial theorem $(x-y)^n = \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} x^k y^{n-k}$,
+By the binomial theorem $(x-y)^n = \sum_{k=0}^{n} (-1)^{k} \binom{n}{k} x^{n-k} y^{k}$,
 \begin{equation*}
     \begin{split}
         \polynomialP{m}{b}{x}
-        &=\sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{b-1} k^r \sum_{j=0}^{r} (-1)^{r-j} \binom{r}{j} x^{r} k^{r-j} \\
-        &=\sum_{r=0}^{m} \sum_{j=0}^{r} (-1)^{r-j} x^{r} \binom{r}{j} \coeffA{m}{r} \sum_{k=0}^{b-1} k^{2r-j} \\
-        &=\sum_{r=0}^{m} x^{r} \coeffA{m}{r} \sum_{j=0}^{r} (-1)^{r-j} \binom{r}{j} \sum_{k=0}^{b-1} k^{2r-j} \\
-        &=\sum_{r=0}^{m} (-1)^{r} x^{r} \coeffA{m}{r}
-        \left[ \sum_{j=0}^{r} \frac{1}{(-1)^j} \binom{r}{j} \sum_{k=0}^{b-1} k^{2r-j} \right] \\
-        &=\sum_{r=0}^{m} (-1)^{r} x^{r} \coeffA{m}{r} \polynomialT{r}{b-1}, \\
+        &=\sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{b-1} k^r \sum_{j=0}^{r} (-1)^{j} \binom{r}{j} x^{r-j} k^{j} \\
+        &=\sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{b-1} \sum_{j=0}^{r} (-1)^{j} \binom{r}{j} x^{r-j} k^{r+j} \\
+        &=\sum_{r=0}^{m} \coeffA{m}{r} \sum_{j=0}^{r} (-1)^{j} x^{r-j} \binom{r}{j} \sum_{k=0}^{b-1} k^{r+j} \\
     \end{split}
 \end{equation*}
-where $\polynomialT{r}{b}$ is defined by~\eqref{eq:def_polynomial_t}.
 However, by the symmetry~\eqref{ppty_symmetry_of_polynomial_l} of $\polynomialL{m}{x}{k}$ the polynomial
 $\polynomialP{m}{b}{x}$ may also be written in the form
 \begin{equation*}

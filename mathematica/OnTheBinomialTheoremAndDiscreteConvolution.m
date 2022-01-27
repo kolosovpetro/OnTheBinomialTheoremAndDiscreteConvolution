@@ -57,7 +57,10 @@ PolynomialP::usage = "Returns the polynomial P[m, b, x]. See definition "
 PolynomialP[m_, n_, b_] :=
     Sum[PolynomialL[m, n, k], {k, 0, b - 1}];
 
-OrdinaryPowerSumS::usage = "Returns ordinary power sum S[p_, n_]:= Sum[k^p, {k, 0, n-1}]."
+PrintListPolynomialP::usage = "Prints the list of polynomials P iterating over the m."
+PrintListPolynomialP[rows_, n_, b_] := Column[Table[StringForm["P(`1`, `2`, `3`) is: `4`", iterator, n, b, PolynomialP[iterator, n, b]], {iterator, 0, rows}], Left];
+
+OrdinaryPowerSumS::usage = "Returns an ordinary power sum S[p_, n_]:= Sum[k^p, {k, 0, n-1}]."
 OrdinaryPowerSumS[p_, n_] :=
     Sum[k^p, {k, 0, n - 1}];
 
@@ -143,8 +146,8 @@ PolynomialIdentityInvolvingH[m_, n_, b_] :=
     Sum[Sum[(-1) ^ (2 m - r) * PolynomialH[m, r, l] * b^l * n^r, {l, 
         1, 2 m - r + 1}], {r, 0, m}];
 
-PolynomialT::usage = "Polynomial sum_{j=0}^{r} frac{1}{(-1)^j} binom{r}{j} sum_{k=0}^{b-1} k^{2r-j}."
-PolynomialT[r_, b_] := Sum[1 / (-1) ^ j * Binomial[r, j] * OrdinaryPowerSumS[2 r - j, b], {j, 0, r}];
+PolynomialIdentityOfP::usage = "Polynomial sum_{r=0}^{m} coeffA{m}{r} sum_{j=0}^{r} (-1)^{j} x^{r-j} binom{r}{j} sum_{k=0}^{b-1} k^{r+j} is identical to P."
+PolynomialIdentityOfP[m_, n_, b_] := Sum[A[m, r] * Sum[(-1)^j * n^(r - j) * Binomial[r, j] * Sum[k^(r+j), {k, 0, b-1}], {j, 0, r}], {r, 0, m}];
 
 Begin["`Private`"]
 
