@@ -2,38 +2,90 @@ name: Build and Deploy PDF
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - v*
+  workflow_dispatch:
+
+env:
+  FILE_NAME: "OnTheBinomialTheoremAndDiscreteConvolution"
+  ACTIONS_RUNNER_DEBUG: false
 
 jobs:
-  build-resume:
+  build-pdf:
     runs-on: ubuntu-latest
-    name: Create document
+    name: Build and Deploy PDF
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
-      - name: Convert to pdf
-        id: convert-to-pdf
-        uses: xu-cheng/latex-action@v2
+        uses: actions/checkout@v4
         with:
-          root_file: OnTheBinomialTheoremAndDiscreteConvolution.tex
+          fetch-depth: 0
+
+      - name: Install GitVersion
+        uses: gittools/actions/gitversion/setup@v1.1.1
+        with:
+          versionSpec: '5.x'
+
+      - name: Determine Version
+        uses: gittools/actions/gitversion/execute@v1.1.1
+
+      - name: Print SemVer
+        run: |
+          echo "SemVer: ${{ env.GitVersion_SemVer }}"
+          echo "BranchName: ${{ env.GitVersion_BranchName }}"
+          echo "ShortSha: ${{ env.GitVersion_ShortSha }}"
+          newVersion="${{ env.GitVersion_SemVer }}+${{ env.GitVersion_BranchName }}.${{ env.GitVersion_ShortSha }}"
+          echo "Next version: $newVersion"
+
+      - name: Update version.tex
+        shell: bash
+        run: |
+          newVersion="${{ env.GitVersion_SemVer }}+${{ env.GitVersion_BranchName }}.${{ env.GitVersion_ShortSha }}"
+          sed -i "s|Local-0.1.0|$newVersion|" "src/sections/version.tex"
+
+      - name: Build PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: "${{ env.FILE_NAME }}.tex"
           working_directory: src
-      - uses: actions/upload-artifact@v2
+
+      - name: List src
+        run: |
+          ls -lsa src
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
         with:
-          name: PDF
-          path: OnTheBinomialTheoremAndDiscreteConvolution.pdf
-      - uses: actions/checkout@v2
+          name: "${{ env.FILE_NAME }}-${{ env.GitVersion_InformationalVersion }}"
+          path: |
+            src/${{ env.FILE_NAME }}.tex
+            src/${{ env.FILE_NAME }}.bbl
+            src/${{ env.FILE_NAME }}.bib
+            src/sections
+
+      - name: Upload artifacts PDF
+        uses: actions/upload-artifact@v4
         with:
-          token: ${{ secrets.GH_ACCESS_TOKEN }}
+          name: "${{ env.FILE_NAME }}-PDF-${{ env.GitVersion_InformationalVersion }}"
+          path: |
+            src/${{ env.FILE_NAME }}.pdf
+
       - name: Clone repository and add document
         run: |
-          git clone https://${{ secrets.GH_ACCESS_TOKEN }}@github.com/kolosovpetro/kolosovpetro.github.io.git ~/kolosovpetro.github.io
-          cp out/OnTheBinomialTheoremAndDiscreteConvolution.pdf  ~/kolosovpetro.github.io/pdf/OnTheBinomialTheoremAndDiscreteConvolution.pdf
+          git clone https://$TOKEN@github.com/kolosovpetro/kolosovpetro.github.io.git ~/kolosovpetro.github.io
+          cp src/${{ env.FILE_NAME }}.pdf ~/kolosovpetro.github.io/pdf/${{ env.FILE_NAME }}.pdf
+        env:
+          TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
+
       - name: Commit document changes if any
         run: |
           cd ~/kolosovpetro.github.io
-          git config --global user.name '${{ secrets.GH_NAME }}'
-          git config --global user.email '${{ secrets.GH_EMAIL }}'
+          git config --global user.name "$USERNAME"
+          git config --global user.email "$EMAIL"
           git add .
-          git commit -am "CICD deploy from main repo"
+          git commit -m "$MESSAGE"
           git push
+        env:
+          USERNAME: "kolosovpetro"
+          EMAIL: "kolosovp94@gmail.com"
+          MESSAGE: "CICD deploy of ${{ env.FILE_NAME }} PDF document"

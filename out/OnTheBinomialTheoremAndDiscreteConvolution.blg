@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: OnTheBinomialTheoremAndDiscreteConvolution.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 53 items.
+Database file #1: OnTheBinomialTheoremAndDiscreteConvolutionReferences.bib
+You've used 6 entries,
+            1791 wiz_defined-function locations,
+            490 strings with 4764 characters,
+and the built_in function-call counts, 1233 in all, are:
+= -- 117
+> -- 40
+< -- 2
++ -- 16
+- -- 10
+* -- 51
+:= -- 186
+add.period$ -- 19
+call.type$ -- 6
+change.case$ -- 6
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 68
+empty$ -- 131
+format.name$ -- 10
+if$ -- 297
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 5
+newline$ -- 33
+num.names$ -- 7
+pop$ -- 27
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 40
+stack$ -- 0
+substring$ -- 38
+swap$ -- 22
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 10
+width$ -- 7
+write$ -- 70
