@@ -11,3 +11,5 @@ and this project adheres to [Semantic Versioning v2.0.0](https://semver.org/spec
 
 - Bibliography style changed
 - Update packages in preamble
+- Added manuscript versioning
+- Updates in definitions
