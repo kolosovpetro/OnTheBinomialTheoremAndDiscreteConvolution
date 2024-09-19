@@ -13,3 +13,4 @@ and this project adheres to [Semantic Versioning v2.0.0](https://semver.org/spec
 - Update packages in preamble
 - Added manuscript versioning
 - Updates in definitions
+- Updates in bibliography

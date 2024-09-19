@@ -5,38 +5,42 @@ Eric~W Weisstein.
 \newblock {"Bernoulli Number." From MathWorld -- A Wolfram Web Resource.}
 \newblock \url {http://mathworld.wolfram.com/BernoulliNumber.html}.
 
-\bibitem{DiscConv}
+\bibitem{damelin_discrete_convolution}
 Steven B.~Damelin and Willard Miller.
 \newblock The mathematics of signal processing.
 \newblock {\em The Mathematics of Signal Processing}, page 232, 01 2011.
 
 \bibitem{AbraSteg72}
-Milton Abramowitz and Irene~A. Stegun, editors.
-\newblock {\em Handbook of Mathematical Functions with Formulas, Graphs, and
-  Mathematical Tables}.
+{Abramowitz, Milton and Stegun, Irene A.}, editor.
+\newblock {\em {Handbook of Mathematical Functions with Formulas, Graphs, and
+  Mathematical Tables}}.
 \newblock U.S. Government Printing Office, Washington, DC, USA, tenth printing
   edition, 1972.
 
-\bibitem{APL}
+\bibitem{iverson_apl}
 Kenneth~E. Iverson.
 \newblock A programming language.
 \newblock In {\em Proceedings of the May 1-3, 1962, Spring Joint Computer
   Conference}, AIEE-IRE '62 (Spring), pages 345--351, New York, NY, USA, 1962.
   ACM.
 
-\bibitem{Grah94SN}
-Ronald~L. Graham, Donald~E. Knuth, and Oren Patashnik.
-\newblock {\em ”Binomial Coefficients” in Concrete Mathematics: A
-  Foundation for Computer Science}.
-\newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 2nd
-  edition, 1994.
+\bibitem{knuth_two_notes_on_notation}
+Donald~E. Knuth.
+\newblock {Two Notes on Notation}.
+\newblock {\em Am. Math. Monthly}, 99(5):403--422, 1992.
 
-\bibitem{PK22Source}
+\bibitem{graham1994concrete}
+{Graham, Ronald L. and Knuth, Donald E. and Patashnik, Oren}.
+\newblock {\em {Concrete mathematics: A foundation for computer science (second
+  edition)}}.
+\newblock {Addison-Wesley Publishing Company, Inc.}, 1994.
+\newblock \url {https://archive.org/details/concrete-mathematics}.
+
+\bibitem{github_source_files}
 Petro Kolosov.
-\newblock {"On the link between binomial theorem and discrete convolution"
-  Source files}.
-\newblock published electronically at \url
-  {https://github.com/kolosovpetro/OnTheBinomialTheoremAndDiscreteConvolution},
-  2022.
+\newblock {On the link between binomial theorem and discrete convolution --
+  Source files}, 2022.
+\newblock \url
+  {https://github.com/kolosovpetro/OnTheBinomialTheoremAndDiscreteConvolution}.
 
 \end{thebibliography}
