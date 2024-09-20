@@ -1,5 +1,18 @@
 # On the link between binomial theorem and discrete convolution
 
+Let $\mathbf{P}^{m}_{b}(x)$ be a $2m+1$-degree polynomial in $x$ and $b \in \mathbb{R}$,
+$$
+\mathbf{P}^{m}_{b}(x) = \sum_{k=0}^{b-1} \sum_{r=0}^{m} \mathbf{A}_{m,r} k^r (x-k)^r,
+$$
+where $\mathbf{A}_{m,r}$ are real coefficients.
+In this manuscript, we introduce the polynomial $\mathbf{P}^{m}_{b}(x)$ and study its properties,
+establishing a polynomial identity for odd-powers in terms of this polynomial.
+Based on mentioned polynomial identity for odd-powers,
+we explore the connection between the Binomial theorem and discrete convolution of odd-powers,
+further extending this relation to the multinomial case.
+All findings are verified using symbolic computation in Mathematica.
+
+
 ## Build and run in Intellij IDEA
 
 - Install `MikTeX`: https://miktex.org/download

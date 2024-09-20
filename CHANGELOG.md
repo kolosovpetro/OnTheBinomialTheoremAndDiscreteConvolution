@@ -16,3 +16,6 @@ and this project adheres to [Semantic Versioning v2.0.0](https://semver.org/spec
 - Updates in bibliography
 - OEIS sequences added to bibliography
 - Updates in figures
+- Updates in abstract
+- Updates in conclusion
+- Updates in README.md
