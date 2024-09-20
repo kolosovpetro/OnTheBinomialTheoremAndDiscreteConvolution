@@ -5,44 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 53 items.
 Database file #1: OnTheBinomialTheoremAndDiscreteConvolutionReferences.bib
-You've used 7 entries,
+You've used 11 entries,
             1791 wiz_defined-function locations,
-            494 strings with 4917 characters,
-and the built_in function-call counts, 1401 in all, are:
-= -- 136
-> -- 33
+            514 strings with 5670 characters,
+and the built_in function-call counts, 1919 in all, are:
+= -- 180
+> -- 49
 < -- 2
-+ -- 15
-- -- 8
-* -- 58
-:= -- 210
-add.period$ -- 23
-call.type$ -- 7
-change.case$ -- 6
++ -- 23
+- -- 12
+* -- 62
+:= -- 292
+add.period$ -- 35
+call.type$ -- 11
+change.case$ -- 10
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 77
-empty$ -- 155
-format.name$ -- 8
-if$ -- 333
+cite$ -- 11
+duplicate$ -- 97
+empty$ -- 227
+format.name$ -- 12
+if$ -- 457
 int.to.chr$ -- 0
-int.to.str$ -- 7
+int.to.str$ -- 11
 missing$ -- 6
-newline$ -- 39
-num.names$ -- 8
-pop$ -- 30
+newline$ -- 59
+num.names$ -- 12
+pop$ -- 54
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 42
+skip$ -- 53
 stack$ -- 0
 substring$ -- 63
-swap$ -- 23
+swap$ -- 27
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 13
-width$ -- 8
-write$ -- 81
+while$ -- 17
+width$ -- 13
+write$ -- 121

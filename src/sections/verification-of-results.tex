@@ -34,8 +34,9 @@ The following commands may be used to reproduce the results of this manuscript:
 \subsection{Examples} \label{subsec:examples}
 For example, given $m=1$ we have the following values of $\polynomialL{1}{x}{k}$
 \begin{table}[H]
+    \setlength\extrarowheight{-6pt}
     \begin{tabular}{c|cccccccc}
-        $x/k$ & 0 & 1  & 2  & 3  & 4  & 5  & 6  & 7 \\[3px]
+        $x/k$ & 0 & 1  & 2  & 3  & 4  & 5  & 6  & 7 \\
         \hline
         0     & 1 &    &    &    &    &    &    &   \\
         1     & 1 & 1  &    &    &    &    &    &   \\
@@ -45,8 +46,8 @@ For example, given $m=1$ we have the following values of $\polynomialL{1}{x}{k}$
         5     & 1 & 25 & 37 & 37 & 25 & 1  &    &   \\
         6     & 1 & 31 & 49 & 55 & 49 & 31 & 1  &   \\
         7     & 1 & 37 & 61 & 73 & 73 & 61 & 37 & 1
-    \end{tabular}
-    \caption{Values of $\polynomialL{1}{x}{k}$. See OEIS entry: \href{https://oeis.org/A300656}{\texttt{A300656}}.}
+    \end{tabular}~\caption{Values of $\polynomialL{1}{x}{k}$.
+    See OEIS entry: \href{https://oeis.org/A300656}{\texttt{A300656}}, \cite{kolosov2017third}.}
     \label{tab:tab_3}
 \end{table}
 Table~\ref{tab:tab_3} can be reproduced using Mathematica command
@@ -67,8 +68,9 @@ From Table~\ref{tab:tab_3} it is seen that
 \end{equation*}
 Another case, given $m=2$ we have the following values of $\polynomialL{2}{x}{k}$
 \begin{table}[H]
+    \setlength\extrarowheight{-6pt}
     \begin{tabular}{c|cccccccc}
-        $x/k$ & 0 & 1    & 2    & 3    & 4    & 5    & 6    & 7 \\ [3px]
+        $x/k$ & 0 & 1    & 2    & 3    & 4    & 5    & 6    & 7 \\
         \hline
         0     & 1 &      &      &      &      &      &      &   \\
         1     & 1 & 1    &      &      &      &      &      &   \\
@@ -79,7 +81,8 @@ Another case, given $m=2$ we have the following values of $\polynomialL{2}{x}{k}
         6     & 1 & 751  & 1921 & 2431 & 1921 & 751  & 1    &   \\
         7     & 1 & 1081 & 3001 & 4321 & 4321 & 3001 & 1081 & 1
     \end{tabular}
-    \caption{Values of $\polynomialL{2}{x}{k}$. See OEIS entry: \href{https://oeis.org/A300656}{\texttt{A300656}}.}
+    \caption{Values of $\polynomialL{2}{x}{k}$.
+    See the OEIS entry \href{https://oeis.org/A300656}{\texttt{A300656}}, ~\cite{kolosov2018fifth}.}
     \label{tab:tab_4}
 \end{table}
 Table~\ref{tab:tab_4} can be reproduced using Mathematica command

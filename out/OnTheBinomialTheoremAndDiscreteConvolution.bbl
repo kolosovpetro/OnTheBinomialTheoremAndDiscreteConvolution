@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{WeissteinBernoulli}
 Eric~W Weisstein.
@@ -16,6 +16,28 @@ Steven B.~Damelin and Willard Miller.
   Mathematical Tables}}.
 \newblock U.S. Government Printing Office, Washington, DC, USA, tenth printing
   edition, 1972.
+
+\bibitem{kolosov2018numerator}
+Petro Kolosov.
+\newblock {Entry A302971 in The On-Line Encyclopedia of Integer Sequences}.
+\newblock Published electronically at \url{https://oeis.org/A302971}, 2018.
+
+\bibitem{kolosov2018denominator}
+Petro Kolosov.
+\newblock {Entry A304042 in The On-Line Encyclopedia of Integer Sequences}.
+\newblock Published electronically at \url{https://oeis.org/A304042}, 2018.
+
+\bibitem{kolosov2017third}
+Petro Kolosov.
+\newblock {Numerical triangle, row sums give third power, Entry A287326 in The
+  On-Line Encyclopedia of Integer Sequences}.
+\newblock Published electronically at \url{https://oeis.org/A287326}, 2017.
+
+\bibitem{kolosov2018fifth}
+Petro Kolosov.
+\newblock {Numerical triangle, row sums give fifth power, Entry A300656 in The
+  On-Line Encyclopedia of Integer Sequences}.
+\newblock Published electronically at \url{https://oeis.org/A300656}, 2018.
 
 \bibitem{iverson_apl}
 Kenneth~E. Iverson.
