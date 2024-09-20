@@ -1,18 +1,18 @@
-The polynomial $\polynomialP{m}{b}{x}, \; m\in\mathbb{N}$ is $2m+1$-degree integer-valued polynomial in $x,b\in\mathbb{R}$.
-\[
-    \polynomialP{m}{b}{x} = \sum_{k=0}^{b-1} \sum_{r=0}^{m} \coeffA{m}{r} k^r(x-k)^r,
-\]
+The polynomial $\polynomialP{m}{b}{x}$ is a $2m+1$-degree polynomial in $x,b\in\mathbb{R}$ defined as
+\begin{align*}
+    \polynomialP{m}{b}{x} = \sum_{k=0}^{b-1} \sum_{r=0}^{m} \coeffA{m}{r} k^r(x-k)^r
+\end{align*}
 where $\coeffA{m}{r}$ is real coefficient.
 By means of Lemma~\ref{lemma_polynomial_p_and_odd_power},
 the polynomial $\polynomialP{m}{b}{x}$ has the following relation with Binomial theorem~\cite{AbraSteg72}
-\[
-    \polynomialP{m}{x+y}{x+y} = \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r.
-\]
+\begin{align*}
+    \polynomialP{m}{x+y}{x+y} = \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r
+\end{align*}
 From the other hand, polynomial $\polynomialP{m}{b}{x}$ might be expressed in terms of discrete convolution
-of polynomial $n^j, \; j\in \mathbb{N}$
-\[
-    \polynomialP{m}{x+1}{x} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 0.
-\]
+of polynomial $n^j$
+\begin{align*}
+    \polynomialP{m}{x+1}{x} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 0
+\end{align*}
 It is of first necessity to notice that  $n^r$ of discrete convolution $\convPower{n}{r}{x}$ evaluated at $x$
 is implicit piecewise-defined polynomial such as
 \begin{equation*}
@@ -23,26 +23,26 @@ is implicit piecewise-defined polynomial such as
     \end{cases}
 \end{equation*}
 Therefore, it is easy to notice the following identities in terms of Binomial theorem and discrete convolution,
-see Corollaries~\ref{cor_bin_exp_and_macaulay_conv},~\ref{cor_bin_exp_and_macaulay_conv_strict}
+see Corollaries~\ref{cor_bin_exp_and_macaulay_conv} and~\ref{cor_bin_exp_and_macaulay_conv_strict}
 \begin{equation*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x+y}
     =
-    1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n \geq 0,
+    1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n \geq 0
 \end{equation*}
 \begin{equation*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x+y}
     =
-    -1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n > 0.
+    -1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n > 0
 \end{equation*}
 Also, the following generalizations for multinomial case are discussed,
 see Corollaries~\ref{cor_mult_exp_and_macaulay_conv},~\ref{cor_mult_exp_and_macaulay_conv_strict}
 \begin{gather*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{\multifoldSum{t}} =
     1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell},
-    \quad n \geq 0,\\
+    \quad n \geq 0\\
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{\multifoldSum{t}} =
     -1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell},
-    \quad n > 0.\\
+    \quad n > 0\\
 \end{gather*}
 A few polynomial identities are straightforward as well by means of
 Theorems~\ref{thm_odd_power_by_macaulays_convolution},~\ref{thm_odd_power_by_macaulays_convolution_strict}.

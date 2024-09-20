@@ -1,0 +1,68 @@
+\begin{thebibliography}{10}
+
+\bibitem{WeissteinBernoulli}
+Eric~W Weisstein.
+\newblock {"Bernoulli Number." From MathWorld -- A Wolfram Web Resource.}
+\newblock \url {http://mathworld.wolfram.com/BernoulliNumber.html}.
+
+\bibitem{damelin_discrete_convolution}
+Steven B.~Damelin and Willard Miller.
+\newblock The mathematics of signal processing.
+\newblock {\em The Mathematics of Signal Processing}, page 232, 01 2011.
+
+\bibitem{AbraSteg72}
+{Abramowitz, Milton and Stegun, Irene A.}, editor.
+\newblock {\em {Handbook of Mathematical Functions with Formulas, Graphs, and
+  Mathematical Tables}}.
+\newblock U.S. Government Printing Office, Washington, DC, USA, tenth printing
+  edition, 1972.
+
+\bibitem{kolosov2018numerator}
+Petro Kolosov.
+\newblock {Entry A302971 in The On-Line Encyclopedia of Integer Sequences}.
+\newblock Published electronically at \url{https://oeis.org/A302971}, 2018.
+
+\bibitem{kolosov2018denominator}
+Petro Kolosov.
+\newblock {Entry A304042 in The On-Line Encyclopedia of Integer Sequences}.
+\newblock Published electronically at \url{https://oeis.org/A304042}, 2018.
+
+\bibitem{kolosov2017third}
+Petro Kolosov.
+\newblock {Numerical triangle, row sums give third power, Entry A287326 in The
+  On-Line Encyclopedia of Integer Sequences}.
+\newblock Published electronically at \url{https://oeis.org/A287326}, 2017.
+
+\bibitem{kolosov2018fifth}
+Petro Kolosov.
+\newblock {Numerical triangle, row sums give fifth power, Entry A300656 in The
+  On-Line Encyclopedia of Integer Sequences}.
+\newblock Published electronically at \url{https://oeis.org/A300656}, 2018.
+
+\bibitem{iverson_apl}
+Kenneth~E. Iverson.
+\newblock A programming language.
+\newblock In {\em Proceedings of the May 1-3, 1962, Spring Joint Computer
+  Conference}, AIEE-IRE '62 (Spring), pages 345--351, New York, NY, USA, 1962.
+  ACM.
+
+\bibitem{knuth_two_notes_on_notation}
+Donald~E. Knuth.
+\newblock {Two Notes on Notation}.
+\newblock {\em Am. Math. Monthly}, 99(5):403--422, 1992.
+
+\bibitem{graham1994concrete}
+{Graham, Ronald L. and Knuth, Donald E. and Patashnik, Oren}.
+\newblock {\em {Concrete mathematics: A foundation for computer science (second
+  edition)}}.
+\newblock {Addison-Wesley Publishing Company, Inc.}, 1994.
+\newblock \url {https://archive.org/details/concrete-mathematics}.
+
+\bibitem{github_source_files}
+Petro Kolosov.
+\newblock {On the link between binomial theorem and discrete convolution --
+  Source files}, 2022.
+\newblock \url
+  {https://github.com/kolosovpetro/OnTheBinomialTheoremAndDiscreteConvolution}.
+
+\end{thebibliography}

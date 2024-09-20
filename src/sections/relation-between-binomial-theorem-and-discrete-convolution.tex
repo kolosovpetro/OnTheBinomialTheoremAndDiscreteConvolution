@@ -8,7 +8,7 @@
         1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n\geq 0.
     \end{equation*}
 \end{cor}
-For example, given $m=0,1,2$ the Corollary~\ref{cor_bin_exp_and_macaulay_conv} gives
+For example, given $m=0,1,2$ the Corollary~\ref{cor_bin_exp_and_macaulay_conv} yields
 \begin{equation*}
     \begin{split}
         \sum_{r=0}^{0} \coeffA{0}{r} \convPower{n}{r}{x+y}
@@ -24,7 +24,7 @@ For example, given $m=0,1,2$ the Corollary~\ref{cor_bin_exp_and_macaulay_conv} g
         &=x^5 + 5 x^4 y + 10 x^3 y^2 + 10 x^2 y^3 + 5 x y^4 + y^5 + 1
     \end{split}
 \end{equation*}
-Above example could be verified using using the commands
+Above example could be verified using using the commands defined in Mathematica package at~\cite{github_source_files}
 \begin{itemize}
     \item \texttt{BinomialTheoremAndDiscreteConvolutionTest[0, x + y]}
     \item \texttt{BinomialTheoremAndDiscreteConvolutionTest[1, x + y]}
@@ -32,7 +32,6 @@ Above example could be verified using using the commands
     \item \texttt{BinomialTheoremAndDiscreteConvolutionTest[2, x + y]}
     \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionTest[2, x + y]]}
 \end{itemize}
-defined in Mathematica package at~\cite{PK22Source}.
 \begin{cor}
     \label{cor_bin_exp_and_macaulay_conv_strict}
     (Generalization of Theorem~\ref{thm_odd_power_by_macaulays_convolution_strict} for Binomials.)
@@ -53,13 +52,12 @@ For example, given $m=0,1$ the Corollary~\ref{cor_bin_exp_and_macaulay_conv_stri
         &= x^3 + 3 x^2 y + 3 x y^2 + y^3 - 1
     \end{split}
 \end{equation*}
-Above example could be verified using using the commands
+Above example could be verified using using the commands defined in Mathematica package at~\cite{github_source_files}
 \begin{itemize}
     \item \texttt{BinomialTheoremAndDiscreteConvolutionStrictTest[0, x + y]}
     \item \texttt{BinomialTheoremAndDiscreteConvolutionStrictTest[1, x + y]}
     \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionStrictTest[1, x + y]]}
 \end{itemize}
-defined in Mathematica package at~\cite{PK22Source}.
 From the other prospective, let be a function $f_r(t,k) = (t-k)^r, \; t \geq k$, then following identity holds
 \begin{equation}
 (x-2a)
@@ -75,7 +73,7 @@ Let be a function $g_r(t,k) = (t-k)^r, \; t > k$, then
 
 \subsection{Generalization for Multinomials} \label{subsec:generalization-for-multinomials}
 In this subsection we generalize
-Theorems~\ref{thm_odd_power_by_macaulays_convolution},~\ref{thm_odd_power_by_macaulays_convolution_strict}
+Theorems~\eqref{thm_odd_power_by_macaulays_convolution} and~\eqref{thm_odd_power_by_macaulays_convolution_strict}
 for multinomial cases.
 \begin{cor}
     \label{cor_mult_exp_and_macaulay_conv}
@@ -94,12 +92,11 @@ For instance, given $m=1$ the Corollary~\ref{cor_mult_exp_and_macaulay_conv} giv
         &=1 + x^3 + 3 x^2 y + 3 x y^2 + y^3 + 3 x^2 z + 6 x y z + 3 y^2 z + 3 x z^2 + 3 y z^2 + z^3.
     \end{split}
 \end{equation*}
-Above example could be verified using using the commands
+Above example could be verified using using the commands defined in Mathematica package at~\cite{github_source_files}
 \begin{itemize}
     \item \texttt{BinomialTheoremAndDiscreteConvolutionTest[1, x + y + z]}
     \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionTest[1, x + y + z]]}
 \end{itemize}
-defined in Mathematica package at~\cite{PK22Source}.
 \begin{cor}
     \label{cor_mult_exp_and_macaulay_conv_strict}
     (Generalization of Theorem~\ref{thm_odd_power_by_macaulays_convolution_strict} for Multinomials.)
@@ -117,9 +114,8 @@ For example, given $m=1$ the Corollary~\ref{cor_mult_exp_and_macaulay_conv_stric
         &=-1 + x^3 + 3 x^2 y + 3 x y^2 + y^3 + 3 x^2 z + 6 x y z + 3 y^2 z + 3 x z^2 + 3 y z^2 + z^3.
     \end{split}
 \end{equation*}
-Above example could be verified using using the commands
+Above example could be verified using using the commands defined in Mathematica package at~\cite{github_source_files}
 \begin{itemize}
     \item \texttt{BinomialTheoremAndDiscreteConvolutionStrictTest[1, x + y + z]}
     \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionStrictTest[1, x + y + z]]}
 \end{itemize}
-defined in Mathematica package at~\cite{PK22Source}.
