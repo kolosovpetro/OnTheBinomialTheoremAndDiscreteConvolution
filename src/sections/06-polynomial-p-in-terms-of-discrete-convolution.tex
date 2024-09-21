@@ -1,7 +1,7 @@
 In this section we discuss the relation between $\polynomialP{m}{b}{x}$ and discrete convolution of
 polynomials.
 To show that $\polynomialP{m}{b}{x}$ involves the discrete convolution of polynomial $n^r$
-let's remind the definition of $\polynomialP{m}{b}{x}$
+recall the definition of the polynomial $\polynomialP{m}{b}{x}$
 \begin{equation*}
     \polynomialP{m}{b}{x} = \sum_{k=0}^{b-1} \sum_{r=0}^{m} \coeffA{m}{r} k^r (x-k)^r
     = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{b-1} k^r (x-k)^r
@@ -11,7 +11,8 @@ A discrete convolution of defined over set of integers $\mathbb{Z}$ function $f$
 (f \ast f)[n]
     = \sum_{k} f(k) f(n-k)
 \end{equation*}
-General formula of discrete convolution for polynomials $f(n) = n^j, \; n\geq a \in \mathbb{R}$ may be derived immediately
+General formula of discrete convolution for polynomials $f(n) = n^j, \; n\geq a \in \mathbb{R}$
+can be derived immediately
 \begin{equation*}
     \begin{split}
         \convPower{n}{j}{x}
@@ -30,7 +31,7 @@ where $[a \leq k \leq x-a]$ is Iverson's bracket~\cite{iverson_apl, knuth_two_no
     \]
 \end{lem}
 It is of first importance to keep in mind that  $n^r$ of discrete convolution $\convPower{n}{r}{x}$ evaluated at $x$
-is implicit piecewise-defined polynomial such as
+is an implicit piecewise-defined polynomial such as
 \begin{equation*}
     n^{r} =
     \begin{cases}
