@@ -77,3 +77,22 @@ For example,
     x^{11} &= \sum_{k=1}^{x} 2772 k^5 (x-k)^5 + 660 k^2(x-k)^2 - 1386k(x-k) + 1 \\
     x^{13} &= \sum_{k=1}^{x} 51480 k^7 (x-k)^7 - 60060 k^3 (x-k)^3 + 491400 k^2 (x-k)^{2} - 450054 k (x-k) + 1 \\
 \end{align*}
+Moreover, the following binomials in terms of discrete convolution of polynomial $n^j$ are found,
+see the equations~\eqref{eq:parametric-identity} and~\eqref{eq:parametric-identity-strict}.
+For every $n \geq 0$
+\begin{equation*}
+    \begin{split}
+    (x-2a)
+        ^{2m+1} + 1 = \sum_{r=0}^{m} \coeffA{m}{r} ((t-k)^r \ast (t-k)^r)[x] \\
+        = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=a}^{x-a-1} (k-a)^r (x-k-a)^r
+    \end{split}
+\end{equation*}
+Similarly, the following binomial holds.
+For every $n > 0$
+\begin{equation*}
+    \begin{split}
+    (x-2a)
+        ^{2m+1} - 1 = \sum_{r=0}^{m} \coeffA{m}{r} ((t-k)^r \ast (t-k)^r)[x] \\
+        = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=a+1}^{x-a-1} (k-a)^r (x-k-a)^r
+    \end{split}
+\end{equation*}
