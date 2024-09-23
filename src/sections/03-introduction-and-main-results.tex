@@ -9,9 +9,10 @@ the polynomial $\polynomialP{m}{b}{x}$ has the following relation with Binomial 
     \polynomialP{m}{x+y}{x+y} = \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r
 \end{align*}
 On the other hand, polynomial $\polynomialP{m}{b}{x}$ might be expressed in terms of discrete convolution
-of polynomial $n^j$
+of polynomial $n^j$.
+For every $n\geq 0$
 \begin{align*}
-    \polynomialP{m}{x+1}{x} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 0
+    \polynomialP{m}{x+1}{x} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}
 \end{align*}
 It is important to notice that  $n^r$ of discrete convolution $\convPower{n}{r}{x}$ evaluated at $x$
 is implicit piecewise-defined polynomial such as
@@ -23,39 +24,40 @@ is implicit piecewise-defined polynomial such as
     \end{cases}
 \end{equation*}
 Therefore, it is easy to notice the following identities in terms of Binomial theorem and discrete convolution,
-see Corollaries~\ref{cor_bin_exp_and_macaulay_conv} and~\ref{cor_bin_exp_and_macaulay_conv_strict}
+see Corollaries~\ref{cor_bin_exp_and_macaulay_conv} and~\ref{cor_bin_exp_and_macaulay_conv_strict}.
+For every $n \geq 0$
 \begin{equation*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x+y}
-    =
-    1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n \geq 0
+    = 1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r
 \end{equation*}
+For every $n > 0$
 \begin{equation*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x+y}
-    =
-    -1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n > 0
+    = -1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r
 \end{equation*}
 Additionally, the following generalizations for the multinomial case are discussed in
-corollaries~\ref{cor_mult_exp_and_macaulay_conv} and ~\ref{cor_mult_exp_and_macaulay_conv_strict}
-\begin{gather*}
+corollaries~\ref{cor_mult_exp_and_macaulay_conv} and ~\ref{cor_mult_exp_and_macaulay_conv_strict}.
+For every $n \geq 0$
+\begin{align*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{\multifoldSum{t}} =
-    1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell},
-    \quad n \geq 0\\
+    1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell}
+\end{align*}
+For every $n>0$
+\begin{align*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{\multifoldSum{t}} =
-    -1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell},
-    \quad n > 0\\
-\end{gather*}
+    -1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell}
+\end{align*}
 A few polynomial identities are straightforward as well by means of
 Theorems~\ref{thm_odd_power_by_macaulays_convolution},~\ref{thm_odd_power_by_macaulays_convolution_strict}.
 Precisely, by the theorem~\ref{thm_odd_power_by_macaulays_convolution} we have an odd-power identity as follows
 \begin{equation*}
     x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{x-1} k^r (x-k)^r
 \end{equation*}
-From another perspective, the theorem~\ref{thm_odd_power_by_macaulays_convolution_strict} concludes as follows
+From the other side, the theorem~\eqref{thm_odd_power_by_macaulays_convolution_strict} provides an odd-power
+polynomial identity as follows
 \begin{equation*}
     x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=1}^{x} k^r (x-k)^r
 \end{equation*}
-In its explicit form an identity $x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{x-1} k^r (x-k)^r$ looks like
-as follows.
 For example,
 \begin{align*}
     x^3 &= \sum_{k=1}^{x} 6k (x-k) + 1 \\

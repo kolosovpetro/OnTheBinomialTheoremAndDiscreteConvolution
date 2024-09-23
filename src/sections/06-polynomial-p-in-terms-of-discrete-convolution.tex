@@ -19,15 +19,15 @@ can be derived immediately
         &=\sum_{k} k^j (x-k)^j [k\geq a][x-k\geq a] \\
         &=\sum_{k} k^j (x-k)^j [k\geq a][k\leq x-a] \\
         &=\sum_{k} k^j (x-k)^j [a \leq k \leq x-a] \\
-        &=\sum_{k=a}^{x-a} k^j (x-k)^j,
+        &=\sum_{k=a}^{x-a} k^j (x-k)^j
     \end{split}
 \end{equation*}
 where $[a \leq k \leq x-a]$ is Iverson's bracket~\cite{iverson_apl, knuth_two_notes_on_notation}.
 \begin{lem}
     \label{lemma_disc_conv_identity}
-    For every $n\in\mathbb{N}, \; x\in\mathbb{R}$
+    For every $n\in\mathbb{N}, \; x\in\mathbb{R}$ and $n\geq 0$
     \[
-        \convPower{n}{r}{x} = \sum_{k=0}^{x} k^r (x-k)^r, \quad n\geq 0.
+        \convPower{n}{r}{x} = \sum_{k=0}^{x} k^r (x-k)^r
     \]
 \end{lem}
 It is of first importance to keep in mind that  $n^r$ of discrete convolution $\convPower{n}{r}{x}$ evaluated at $x$
@@ -43,31 +43,32 @@ Thus, the corollary follows
 \begin{cor}
     \label{cor_polynomial_p_and_macaulay_convolution}
     By Lemma~\ref{lemma_disc_conv_identity} the polynomial $\polynomialP{m}{b}{n}$ might be expressed in terms
-    of discrete convolution as follows
-    \[
-        \polynomialP{m}{x+1}{x} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 0.
-    \]
+    of discrete convolution as follows, for every $n\geq 0$
+    \begin{align*}
+        \polynomialP{m}{x+1}{x} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}
+    \end{align*}
 \end{cor}
 Therefore, another polynomial identity follows
 \begin{thm}
     \label{thm_odd_power_by_macaulays_convolution}
     By Lemma~\ref{lemma_polynomial_p_and_odd_power}, Corollary~\ref{cor_polynomial_p_and_macaulay_convolution}
-    and property~\ref{prop_p_identity}, for every $m\in\mathbb{N}, \; x\in\mathbb{R}$
-    \begin{equation*}
-        1 + x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 0.
-    \end{equation*}
+    and property~\ref{prop_p_identity}, for every $m\in\mathbb{N}, \; x\in\mathbb{R}$ and $n\geq 0$
+    \begin{align*}
+        1 + x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}
+                     = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{x} k^r (x-k)^r
+    \end{align*}
 \end{thm}
 Now we notice the following identity in terms of polynomial $\polynomialP{m}{b}{x}$ and
 discrete convolution $\convPower{n}{j}{x}$
 \begin{prop}
     \label{prop_polynomial_p_and_macaulay_convolution_strict}
-    For every $m \in \mathbb{N}, \; x\in\mathbb{R}$
+    For every $m \in \mathbb{N}, \; x\in\mathbb{R}$ and $n \geq 1$
     \begin{equation*}
         \begin{split}
             \polynomialP{m}{x}{x}
             &=\sum_{r=0}^{m} \coeffA{m}{r} \left(0^r x^r + \sum_{k=1}^{x-1} k^r (x-k)^r \right) \\
             &=\sum_{r=0}^{m} \coeffA{m}{r} 0^r x^r + \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x} \\
-            &=1 + \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 1.
+            &=1 + \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}
         \end{split}
     \end{equation*}
 \end{prop}
@@ -80,16 +81,17 @@ Since that for all $r$ in $\coeffA{m}{r} 0^r x^r$ we have
     \end{cases}
 \end{equation*}
 Above is true because $\coeffA{m}{0}=1$ for every $m\in\mathbb{N}$, and $x^0 = 1$
-for every $x$, ~\cite{graham1994concrete}.
+for every $x$, see~\cite{graham1994concrete}.
 Hence, the following identity between $\polynomialP{m}{b}{x}$ and
 discrete convolution $\convPower{n}{j}{x}$ holds
 \begin{thm}
     \label{thm_odd_power_by_macaulays_convolution_strict}
     By Lemma~\ref{lemma_polynomial_p_and_odd_power} and
     Proposition~\ref{prop_polynomial_p_and_macaulay_convolution_strict},
-    for every $m\in\mathbb{N}, \; x\in\mathbb{R}$
+    for every $m\in\mathbb{N}, \; x\in\mathbb{R}$ and $n > 0$
     \begin{equation*}
-        -1 + x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n > 0.
+        -1 + x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}
+                      = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=1}^{x-1} k^r (x-k)^r
     \end{equation*}
 \end{thm}
 \begin{cor}
