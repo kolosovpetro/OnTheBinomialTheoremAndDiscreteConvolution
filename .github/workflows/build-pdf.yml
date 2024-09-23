@@ -36,6 +36,23 @@ jobs:
       - name: Determine Version
         uses: gittools/actions/gitversion/execute@v1.1.1
 
+      - name: Lint LaTeX document
+        uses: ChiefGokhlayeh/textidote-action@v5
+        id: lint
+        with:
+          root_file: 'src/${{ env.FILE_NAME }}.tex'
+
+      - name: Upload TeXtidote report
+        uses: actions/upload-artifact@v2
+        with:
+          name: textidote_report
+          path: report.html
+
+      - name: Throw error if linter warnings exist
+        if: ${{ steps.lint.outputs.num_warnings != 0 }}
+        run: 'echo "::error file=main.tex::num_warnings: ${{ steps.lint.outputs.num_warnings }}"; exit 1;'
+
+
       - name: Print SemVer
         run: |
           echo "SemVer: ${{ env.GitVersion_SemVer }}"
