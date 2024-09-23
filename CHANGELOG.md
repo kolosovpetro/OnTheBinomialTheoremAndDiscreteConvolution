@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning v2.0.0](https://semver.org/spec
 - Readability improvements
 - Update keywords
 - Add source files link
+- Updates in main results
 
 ## [1.0.1] - 2024-09-21
 
