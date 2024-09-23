@@ -28,6 +28,14 @@
 \newcommand \polynomialL [4][L]{{\mathbf{#1}}\sb{#2}(#3,#4)}
 \newcommand \polynomialT [3][T]{{\mathbf{#1}}\sp{#2} (#3)}
 
+% free foot note
+\let\svthefootnote\thefootnote
+\newcommand\freefootnote[1]{%
+    \let\thefootnote\relax%
+    \footnotetext{#1}%
+    \let\thefootnote\svthefootnote%
+}
+
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem{prop}[thm]{Proposition}
@@ -81,8 +89,12 @@
     \begin{abstract}
         \input{sections/01-abstract}
     \end{abstract}
+
     \maketitle
+
     \tableofcontents
+
+    \freefootnote{Sources: \url{https://github.com/kolosovpetro/OnTheBinomialTheoremAndDiscreteConvolution}}
 
 
     \section{Definitions, notations and conventions} \label{sec:definitions-notations-and-conventions}
