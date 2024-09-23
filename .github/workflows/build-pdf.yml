@@ -43,7 +43,7 @@ jobs:
           root_file: 'src/${{ env.FILE_NAME }}.tex'
 
       - name: Upload TeXtidote report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: textidote_report
           path: report.html
