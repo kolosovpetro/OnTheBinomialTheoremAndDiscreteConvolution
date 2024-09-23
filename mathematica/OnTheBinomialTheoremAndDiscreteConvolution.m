@@ -149,6 +149,12 @@ PolynomialIdentityInvolvingH[m_, n_, b_] :=
 PolynomialIdentityOfP::usage = "Polynomial sum_{r=0}^{m} coeffA{m}{r} sum_{j=0}^{r} (-1)^{j} x^{r-j} binom{r}{j} sum_{k=0}^{b-1} k^{r+j} is identical to P."
 PolynomialIdentityOfP[m_, n_, b_] := Sum[A[m, r] * Sum[(-1)^j * n^(r - j) * Binomial[r, j] * Sum[k^(r+j), {k, 0, b-1}], {j, 0, r}], {r, 0, m}];
 
+ConvolutionOfBinomial::usage = "Returns an identity (x-2a)^{2m+1} + 1."
+ConvolutionOfBinomial[x_, a_, m_] := Sum[A[m, r]* Sum[(k - a)^r * (x - a - k)^r, {k, a, x - a}], {r, 0, m}];
+
+ConvolutionOfBinomial1::usage = "Returns an identity (x-2a)^{2m+1} - 1."
+ConvolutionOfBinomial1[x_, a_, m_] := Sum[A[m, r]* Sum[(k - a)^r * (x - a - k)^r, {k, a+1, x - a-1}], {r, 0, m}];
+
 Begin["`Private`"]
 
 Unprotect[Power];

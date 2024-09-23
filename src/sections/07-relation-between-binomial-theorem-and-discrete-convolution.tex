@@ -1,29 +1,27 @@
 \begin{cor}
     \label{cor_bin_exp_and_macaulay_conv}
     (Generalization of Theorem~\ref{thm_odd_power_by_macaulays_convolution} for Binomials.)
-    For every $m\in\mathbb{N}, \; x,y\in\mathbb{R}$
+    For every $m\in\mathbb{N}, \; x,y\in\mathbb{R}$ and $n\geq 0$
     \begin{equation*}
         \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x+y}
         =
-        1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n\geq 0.
+        1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r
     \end{equation*}
 \end{cor}
 For example, given $m=0,1,2$ the Corollary~\ref{cor_bin_exp_and_macaulay_conv} yields
-\begin{equation*}
-    \begin{split}
-        \sum_{r=0}^{0} \coeffA{0}{r} \convPower{n}{r}{x+y}
-        &= 1 + x + y \\
-        \sum_{r=0}^{1} \coeffA{1}{r} \convPower{n}{r}{x+y}
-        &= 1 + x + y - (x + y) (1 + x + y) (1 - 3 x - 3 y + 2 (x + y)) \\
-        &= 1 + x^3 + 3 x^2 y + 3 x y^2 + y^3\\
-        \sum_{r=0}^{2} \coeffA{2}{r} \convPower{n}{r}{x+y}
-        &=1 + x + y + (x + y) (1 + x + y) \left(-1 + x + 5 x^2 + y + 10 x y + 5 y^2\right. \\
-        &-15 x (x + y) + 10 x^2 (x + y) - 15 y (x + y) + 20 x y (x + y) \\
-        &+ 10 y^2 (x + y) +9 (x + y)^2 - 15 x (x + y)^2 \\
-        &\left.-15 y (x + y)^{2} + 6 {(x + y)}^{3}\right) \\
-        &=x^5 + 5 x^4 y + 10 x^3 y^2 + 10 x^2 y^3 + 5 x y^4 + y^5 + 1
-    \end{split}
-\end{equation*}
+\begin{align*}
+    \sum_{r=0}^{0} \coeffA{0}{r} \convPower{n}{r}{x+y}
+    &= 1 + x + y \\
+    \sum_{r=0}^{1} \coeffA{1}{r} \convPower{n}{r}{x+y}
+    &= 1 + x + y - (x + y) (1 + x + y) (1 - 3 x - 3 y + 2 (x + y)) \\
+    &= 1 + x^3 + 3 x^2 y + 3 x y^2 + y^3\\
+    \sum_{r=0}^{2} \coeffA{2}{r} \convPower{n}{r}{x+y}
+    &=1 + x + y + (x + y) (1 + x + y) \left(-1 + x + 5 x^2 + y + 10 x y + 5 y^2\right. \\
+    &-15 x (x + y) + 10 x^2 (x + y) - 15 y (x + y) + 20 x y (x + y) \\
+    &+ 10 y^2 (x + y) +9 (x + y)^2 - 15 x (x + y)^2 \\
+    &\left.-15 y (x + y)^{2} + 6 {(x + y)}^{3}\right) \\
+    &=x^5 + 5 x^4 y + 10 x^3 y^2 + 10 x^2 y^3 + 5 x y^4 + y^5 + 1
+\end{align*}
 Above example could be verified using using the commands defined in Mathematica package at~\cite{github_source_files}
 \begin{itemize}
     \item \texttt{BinomialTheoremAndDiscreteConvolutionTest[0, x + y]}
@@ -35,11 +33,11 @@ Above example could be verified using using the commands defined in Mathematica 
 \begin{cor}
     \label{cor_bin_exp_and_macaulay_conv_strict}
     (Generalization of Theorem~\ref{thm_odd_power_by_macaulays_convolution_strict} for Binomials.)
-    For every $m\in\mathbb{N}, \; x,y\in\mathbb{R}$
+    For every $m\in\mathbb{N}, \; x,y\in\mathbb{R}$ and $n > 0$
     \begin{equation*}
         \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x+y}
         =
-        -1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n > 0.
+        -1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r
     \end{equation*}
 \end{cor}
 For example, given $m=0,1$ the Corollary~\ref{cor_bin_exp_and_macaulay_conv_strict} gives
@@ -58,18 +56,30 @@ Above example could be verified using using the commands defined in Mathematica 
     \item \texttt{BinomialTheoremAndDiscreteConvolutionStrictTest[1, x + y]}
     \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionStrictTest[1, x + y]]}
 \end{itemize}
-From the other prospective, let be a function $f_r(t,k) = (t-k)^r, \; t \geq k$, then following identity holds
+From the other prospective, the following binomial holds.
+For every $n \geq 0$
 \begin{equation}
-(x-2a)
-    ^{2m+1} + 1 =\sum_{r=0}^{m} \coeffA{m}{r} (f_r(t,k) \ast f_r(t,k))[x]
     \label{eq:parametric-identity}
+    \begin{split}
+        (x-2a)^{2m+1} + 1 = \sum_{r=0}^{m} \coeffA{m}{r} ((t-k)^r \ast (t-k)^r)[x] \\
+                          = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=a}^{x-a-1} (k-a)^r (x-k-a)^r
+    \end{split}
 \end{equation}
-Let be a function $g_r(t,k) = (t-k)^r, \; t > k$, then
+Similarly, the following binomial holds.
+For every $n > 0$
 \begin{equation}
-(x-2a)
-    ^{2m+1} - 1 =\sum_{r=0}^{m} \coeffA{m}{r} (g_r(t,k) \ast g_r(t,k))[x]
     \label{eq:parametric-identity-strict}
+    \begin{split}
+        (x-2a)^{2m+1} - 1 = \sum_{r=0}^{m} \coeffA{m}{r} ((t-k)^r \ast (t-k)^r)[x] \\
+                          = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=a+1}^{x-a-1} (k-a)^r (x-k-a)^r
+    \end{split}
 \end{equation}
+To validate equations~\eqref{eq:parametric-identity} and~\eqref{eq:parametric-identity-strict}
+use the following commands
+\begin{itemize}
+    \item \texttt{ConvolutionOfBinomial[10, 2, 1]} verifies an equation~\eqref{eq:parametric-identity}.
+    \item \texttt{ConvolutionOfBinomial1[10, 2, 1]} verifies an equation~\eqref{eq:parametric-identity-strict}.
+\end{itemize}
 
 \subsection{Generalization for Multinomials} \label{subsec:generalization-for-multinomials}
 In this subsection we generalize
@@ -78,7 +88,7 @@ for multinomial cases.
 \begin{cor}
     \label{cor_mult_exp_and_macaulay_conv}
     (Generalization of Theorem~\ref{thm_odd_power_by_macaulays_convolution} for Multinomials.)
-    For every $x_1, x_2, \ldots, x_t\in\mathbb{R}, \; m\in\mathbb{N}, \; n\geq1\in\mathbb{N}$
+    For every $x_1, x_2, \ldots, x_t\in\mathbb{R}, \; m\in\mathbb{N}, \; n \geq 1$
     \[
         \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{\multifoldSum{t}} =
         1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell}
@@ -100,7 +110,7 @@ Above example could be verified using using the commands defined in Mathematica 
 \begin{cor}
     \label{cor_mult_exp_and_macaulay_conv_strict}
     (Generalization of Theorem~\ref{thm_odd_power_by_macaulays_convolution_strict} for Multinomials.)
-    For each $\multifoldSum{t} \geq 1, \; x_1,x_2,\ldots,x_t\in\mathbb{R}, \; m\in\mathbb{N}, \; n\geq1\in\mathbb{N}$
+    For each $\multifoldSum{t} \geq 1, \; x_1,x_2,\ldots,x_t\in\mathbb{R}, \; m\in\mathbb{N}, \; n\geq1$
     \[
         \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{\multifoldSum{t}} =
         -1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell}

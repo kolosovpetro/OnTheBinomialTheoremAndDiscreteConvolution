@@ -7,10 +7,10 @@ We now set the following notation, which remains fixed for the remainder of this
         \coeffA{m}{r} =
         \begin{cases}
         (2r+1)
-            \binom{2r}{r}, & \text{if } r=m; \\
+            \binom{2r}{r} & \text{if } r=m \\
             (2r+1) \binom{2r}{r} \sum_{d=2r+1}^{m} \coeffA{m}{d} \binom{d}{2r+1} \frac{(-1)^{d-1}}{d-r}
-            \bernoulli{2d-2r}, & \text{if } 0 \leq r<m; \\
-            0, & \text{if } r<0 \text{ or } r>m,
+            \bernoulli{2d-2r} & \text{if } 0 \leq r<m \\
+            0 & \text{if } r<0 \text{ or } r>m
         \end{cases}
     \end{equation}
     where $m$ is non-negative integer and $\bernoulli{t}$ are Bernoulli numbers~\cite{WeissteinBernoulli}.
@@ -47,5 +47,9 @@ We now set the following notation, which remains fixed for the remainder of this
     \begin{align*}
     (f\ast f)[n]
         = \sum_{k} f(k) f(n-k)
+    \end{align*}
+    and its partial case for polynomials $n^j, \; n\geq a \in \mathbb{R}$
+    \begin{align*}
+        \convPower{n}{j}{x} =\sum_{k} k^j (x-k)^j [k\geq a][x-k\geq a] =\sum_{k=a}^{x-a} k^j (x-k)^j
     \end{align*}
 \end{itemize}

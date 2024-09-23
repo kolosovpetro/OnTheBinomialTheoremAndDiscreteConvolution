@@ -3,15 +3,16 @@ The polynomial $\polynomialP{m}{b}{x}$ is a $2m+1$-degree polynomial in $x,b\in\
     \polynomialP{m}{b}{x} = \sum_{k=0}^{b-1} \sum_{r=0}^{m} \coeffA{m}{r} k^r(x-k)^r
 \end{align*}
 where $\coeffA{m}{r}$ is a real coefficient.
-By means of Lemma~\ref{lemma_polynomial_p_and_odd_power},
+By means of Lemma~\eqref{lemma_polynomial_p_and_odd_power},
 the polynomial $\polynomialP{m}{b}{x}$ has the following relation with Binomial theorem~\cite{AbraSteg72}
 \begin{align*}
     \polynomialP{m}{x+y}{x+y} = \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r
 \end{align*}
 On the other hand, polynomial $\polynomialP{m}{b}{x}$ might be expressed in terms of discrete convolution
-of polynomial $n^j$
+of polynomial $n^j$.
+For every $n\geq 0$
 \begin{align*}
-    \polynomialP{m}{x+1}{x} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}, \quad n\geq 0
+    \polynomialP{m}{x+1}{x} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}
 \end{align*}
 It is important to notice that  $n^r$ of discrete convolution $\convPower{n}{r}{x}$ evaluated at $x$
 is implicit piecewise-defined polynomial such as
@@ -23,39 +24,50 @@ is implicit piecewise-defined polynomial such as
     \end{cases}
 \end{equation*}
 Therefore, it is easy to notice the following identities in terms of Binomial theorem and discrete convolution,
-see Corollaries~\ref{cor_bin_exp_and_macaulay_conv} and~\ref{cor_bin_exp_and_macaulay_conv_strict}
+see the corollaries~\eqref{cor_bin_exp_and_macaulay_conv} and~\eqref{cor_bin_exp_and_macaulay_conv_strict}.
+For every $n \geq 0$
 \begin{equation*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x+y}
-    =
-    1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n \geq 0
+    = 1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r
 \end{equation*}
+For every $n > 0$
 \begin{equation*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x+y}
-    =
-    -1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r, \quad n > 0
+    = -1 + \sum_{r=0}^{2m+1} \binom{2m+1}{r} x^{2m+1-r} y^r
 \end{equation*}
 Additionally, the following generalizations for the multinomial case are discussed in
-corollaries~\ref{cor_mult_exp_and_macaulay_conv} and ~\ref{cor_mult_exp_and_macaulay_conv_strict}
-\begin{gather*}
+the corollaries~\eqref{cor_mult_exp_and_macaulay_conv} and ~\eqref{cor_mult_exp_and_macaulay_conv_strict}.
+For every $n \geq 0$
+\begin{align*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{\multifoldSum{t}} =
-    1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell},
-    \quad n \geq 0\\
+    1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell}
+\end{align*}
+For every $n>0$
+\begin{align*}
     \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{\multifoldSum{t}} =
-    -1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell},
-    \quad n > 0\\
-\end{gather*}
-A few polynomial identities are straightforward as well by means of
-Theorems~\ref{thm_odd_power_by_macaulays_convolution},~\ref{thm_odd_power_by_macaulays_convolution_strict}.
-Precisely, by the theorem~\ref{thm_odd_power_by_macaulays_convolution} we have an odd-power identity as follows
+    -1 + \sum_{\multifoldSum[k]{t}=2m+1} \binom{2m+1}{k_1, k_2,\ldots, k_t} \prod_{\ell=1}^{t} x_\ell^{k_\ell}
+\end{align*}
+A few polynomial identities are straightforward by means of
+the theorems~\eqref{thm_odd_power_by_macaulays_convolution},~\eqref{thm_odd_power_by_macaulays_convolution_strict}.
+More precisely, by the theorem~\eqref{thm_odd_power_by_macaulays_convolution} we have an odd-power identity as follows
 \begin{equation*}
     x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{x-1} k^r (x-k)^r
 \end{equation*}
-From another perspective, the theorem~\ref{thm_odd_power_by_macaulays_convolution_strict} concludes as follows
+so that
+\begin{align*}
+    1 + x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}
+    = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{x} k^r (x-k)^r
+\end{align*}
+From the other side, the theorem~\eqref{thm_odd_power_by_macaulays_convolution_strict} provides an odd-power
+polynomial identity as follows
 \begin{equation*}
     x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=1}^{x} k^r (x-k)^r
 \end{equation*}
-In its explicit form an identity $x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=0}^{x-1} k^r (x-k)^r$ looks like
-as follows.
+so that
+\begin{equation*}
+    -1 + x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}
+    = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=1}^{x-1} k^r (x-k)^r
+\end{equation*}
 For example,
 \begin{align*}
     x^3 &= \sum_{k=1}^{x} 6k (x-k) + 1 \\
@@ -65,3 +77,30 @@ For example,
     x^{11} &= \sum_{k=1}^{x} 2772 k^5 (x-k)^5 + 660 k^2(x-k)^2 - 1386k(x-k) + 1 \\
     x^{13} &= \sum_{k=1}^{x} 51480 k^7 (x-k)^7 - 60060 k^3 (x-k)^3 + 491400 k^2 (x-k)^{2} - 450054 k (x-k) + 1 \\
 \end{align*}
+Moreover, the following binomials in terms of discrete convolution of polynomial $n^j$ are found,
+see the equations~\eqref{eq:parametric-identity} and~\eqref{eq:parametric-identity-strict}.
+For every $n \geq 0$
+\begin{equation*}
+    \begin{split}
+    (x-2a)
+        ^{2m+1} + 1 = \sum_{r=0}^{m} \coeffA{m}{r} ((t-k)^r \ast (t-k)^r)[x] \\
+        = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=a}^{x-a-1} (k-a)^r (x-k-a)^r
+    \end{split}
+\end{equation*}
+Similarly, the following binomial holds.
+For every $n > 0$
+\begin{equation*}
+    \begin{split}
+    (x-2a)
+        ^{2m+1} - 1 = \sum_{r=0}^{m} \coeffA{m}{r} ((t-k)^r \ast (t-k)^r)[x] \\
+        = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=a+1}^{x-a-1} (k-a)^r (x-k-a)^r
+    \end{split}
+\end{equation*}
+This manuscript does not contain any historical context about the polynomial $\polynomialP{m}{b}{x}$,
+either how exactly it was derived including all the milestones.
+To get more information about the history of polynomials $\polynomialP{m}{b}{x}$, the reader can refer
+to the manuscript
+\begin{center}
+    \href{https://kolosovpetro.github.io/pdf/HistoryAndOverviewOfPolynomialP.pdf}
+    {\texttt{kolosovpetro.github.io/pdf/HistoryAndOverviewOfPolynomialP.pdf}}
+\end{center}
