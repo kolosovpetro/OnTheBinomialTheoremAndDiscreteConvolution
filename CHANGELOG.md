@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning v2.0.0](https://semver.org/spec
 - Update keywords
 - Add source files link
 - Updates in main results
+- Add mathematica programs for binomial identities
+- Update equations (6.2) and (6.3)
 
 ## [1.0.1] - 2024-09-21
 

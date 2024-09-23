@@ -56,18 +56,30 @@ Above example could be verified using using the commands defined in Mathematica 
     \item \texttt{BinomialTheoremAndDiscreteConvolutionStrictTest[1, x + y]}
     \item \texttt{Expand[BinomialTheoremAndDiscreteConvolutionStrictTest[1, x + y]]}
 \end{itemize}
-From the other prospective, let be a function $f_r(t,k) = (t-k)^r, \; t \geq k$, then following identity holds
+From the other prospective, then following binomial holds.
+For every $n \geq 0$
 \begin{equation}
-(x-2a)
-    ^{2m+1} + 1 =\sum_{r=0}^{m} \coeffA{m}{r} (f_r(t,k) \ast f_r(t,k))[x]
     \label{eq:parametric-identity}
+    \begin{split}
+        (x-2a)^{2m+1} + 1 = \sum_{r=0}^{m} \coeffA{m}{r} ((t-k)^r \ast (t-k)^r)[x] \\
+                          = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=a}^{x-a-1} (k-a)^r (x-k-a)^r
+    \end{split}
 \end{equation}
-Let be a function $g_r(t,k) = (t-k)^r, \; t > k$, then
+Similarly, the following binomial holds.
+For every $n > 0$
 \begin{equation}
-(x-2a)
-    ^{2m+1} - 1 =\sum_{r=0}^{m} \coeffA{m}{r} (g_r(t,k) \ast g_r(t,k))[x]
     \label{eq:parametric-identity-strict}
+    \begin{split}
+        (x-2a)^{2m+1} - 1 = \sum_{r=0}^{m} \coeffA{m}{r} ((t-k)^r \ast (t-k)^r)[x] \\
+                          = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=a+1}^{x-a-1} (k-a)^r (x-k-a)^r
+    \end{split}
 \end{equation}
+To validate equations~\eqref{eq:parametric-identity} and~\eqref{eq:parametric-identity-strict}
+use the following commands
+\begin{itemize}
+    \item \texttt{ConvolutionOfBinomial[10, 2, 1]} verifies an equation~\eqref{eq:parametric-identity}.
+    \item \texttt{ConvolutionOfBinomial1[10, 2, 1]} verifies an equation~\eqref{eq:parametric-identity-strict}.
+\end{itemize}
 
 \subsection{Generalization for Multinomials} \label{subsec:generalization-for-multinomials}
 In this subsection we generalize
