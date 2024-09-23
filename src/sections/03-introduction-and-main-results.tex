@@ -61,10 +61,6 @@ so that
 From the other side, the theorem~\eqref{thm_odd_power_by_macaulays_convolution_strict} provides an odd-power
 polynomial identity as follows
 \begin{equation*}
-    x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=1}^{x} k^r (x-k)^r
-\end{equation*}
-so that
-\begin{equation*}
     -1 + x^{2m+1} = \sum_{r=0}^{m} \coeffA{m}{r} \convPower{n}{r}{x}
     = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=1}^{x-1} k^r (x-k)^r
 \end{equation*}
@@ -83,8 +79,8 @@ For every $n \geq 0$
 \begin{equation*}
     \begin{split}
     (x-2a)
-        ^{2m+1} + 1 = \sum_{r=0}^{m} \coeffA{m}{r} ((t-k)^r \ast (t-k)^r)[x] \\
-        = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=a}^{x-a-1} (k-a)^r (x-k-a)^r
+        ^{2m+1} + 1 &= \sum_{r=0}^{m} \coeffA{m}{r} ((t-k)^r \ast (t-k)^r)[x] \\
+                    &= \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=a}^{x-a} (k-a)^r (x-k-a)^r
     \end{split}
 \end{equation*}
 Similarly, the following binomial holds.
@@ -92,8 +88,8 @@ For every $n > 0$
 \begin{equation*}
     \begin{split}
     (x-2a)
-        ^{2m+1} - 1 = \sum_{r=0}^{m} \coeffA{m}{r} ((t-k)^r \ast (t-k)^r)[x] \\
-        = \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=a+1}^{x-a-1} (k-a)^r (x-k-a)^r
+        ^{2m+1} - 1 &= \sum_{r=0}^{m} \coeffA{m}{r} ((t-k)^r \ast (t-k)^r)[x] \\
+                    &= \sum_{r=0}^{m} \coeffA{m}{r} \sum_{k=a+1}^{x-a-1} (k-a)^r (x-k-a)^r
     \end{split}
 \end{equation*}
 This manuscript does not contain any historical context about the polynomial $\polynomialP{m}{b}{x}$,

@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning v2.0.0](https://semver.org/spec
 
 ### Changed
 
+- Formulae fix
+
+## [1.0.2] - 2024-09-23
+
+### Changed
+
 - Readability improvements
 - Update keywords
 - Add source files link
